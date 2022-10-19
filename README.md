@@ -8,7 +8,7 @@ Integrantes do grupo<br>
 Eduardo Olmo Santana:eduardo.olmosantana@gmail.com<br>
 Nycolly do Nascimento Mendes:nycollydonascimentomendes@gmail.com<br>
 Paulo Cezar Rocha Futado:paulocezarrf@hotmail.com<br>
-Elisa Andrade de Jesus:...<br>
+Elisa Andrade de Jesus:moon.anonimos.es@gmail.com<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇÃO<br>
 Este documento contém a especificação do projeto do banco de dados <nome do projeto> 
