@@ -50,8 +50,8 @@ gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
         Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
         e tuplas falsas (Aplicar os conceitos de normalização abordados).   
         
-![Alt text](https://github.com/discipbd1/trab01/blob/master/images/concept_sample.png?raw=true "Modelo Conceitual")
-    
+![image](https://user-images.githubusercontent.com/91472785/198711788-aa7b48be-f355-4aaf-a5f5-96619f6fa9c5.png)
+
     
         
     
