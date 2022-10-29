@@ -17,8 +17,8 @@ Elisa Andrade de Jesus:moon.anonimos.es@gmail.com<br>
 
 ### 3.MINI-MUNDO<br>
 
-> O aplicativo "AiQueFome!" foi feito para facilitar e otimizar os serviços de delivery de restaurantes e possibilitar que o clientes tenham acesso a diversos produtos alimentícios em um só lugar. Dessa forma o "AiQueFome!" criou um sistema que funciona da seguinte forma: Restaurante produz produto, o qual compõe o pedido, que é retirado pelo Entregador para ser entregue ao cliente, que possui um endereço. Do restaurante será armazenado o CNPJ (atributo identificador), e nome. Do produto armazenaremos código do produto(identificador) e preço. Do pedido armazenaremos código do pedido, seu atributo identificador, e o seu preço total. Do entregador armazenaremos cpf, que é seu identificador, turno, salário e nome. Do cliente armazenaremos: cpf(identificador), nome e telefone. Do endereço armazenaremos as informações de rua, número e bairro. Da relação de entrega armazenaremos a data e hora.<br>
-Um restaurante pode produzir um ou vários produtos, enquanto um produto pode ser produzido por um ou vários restaurantes. Um produto pode compor um ou vários pedidos, assim como um pedido pode ser composto por um ou vários produtos. Um cliente pode fazer um ou vários pedidos, ao mesmo tempo que um pedido pode ser feito por um ou vários clientes. Um entregador pode retirar um ou vários pedidos, porém um pedido só pode ser retirado por apenas um entregador. Um entregador pode entregar para um ou vários clientes, e um cliente pode receber de um ou vários entregadores. Por fim, um  cliente possui apenas um endereço, e um endereço só pode estar relacionado a apenas um cliente.
+    O aplicativo "AiQueFome!" foi feito para facilitar e otimizar os serviços de delivery de restaurantes e possibilitar que o clientes tenham acesso a diversos produtos alimentícios em um só lugar. Dessa forma o "AiQueFome!" criou um sistema que funciona da seguinte forma: Restaurante produz produto, o qual compõe o pedido, que é retirado pelo Entregador para ser entregue ao cliente, que possui um endereço. Do restaurante será armazenado o CNPJ (atributo identificador), e nome. Do produto armazenaremos código do produto(identificador) e preço. Do pedido armazenaremos código do pedido, seu atributo identificador, e o seu preço total. Do entregador armazenaremos cpf, que é seu identificador, turno, salário e nome. Do cliente armazenaremos: cpf(identificador), nome e telefone. Do endereço armazenaremos as informações de rua, número e bairro. Da relação de entrega armazenaremos a data e hora.<br>
+    Um restaurante pode produzir um ou vários produtos, enquanto um produto pode ser produzido por um ou vários restaurantes. Um produto pode compor um ou vários pedidos, assim como um pedido pode ser composto por um ou vários produtos. Um cliente pode fazer um ou vários pedidos, ao mesmo tempo que um pedido pode ser feito por um ou vários clientes. Um entregador pode retirar um ou vários pedidos, porém um pedido só pode ser retirado por apenas um entregador. Um entregador pode entregar para um ou vários clientes, e um cliente pode receber de um ou vários entregadores. Por fim, um  cliente possui apenas um endereço, e um endereço só pode estar relacionado a apenas um cliente.
 
 ### 4.PERGUNTAS A SEREM RESPONDIDAS E TABELA DE DADOS<br>
 #### 4.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
@@ -31,15 +31,7 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
 * Relatório que obtenha a frequencia absoluta e frequencia relativa da quantidade de cpfs únicos no relatório anterior. Apresente os resultados ordenados de forma decrescente pela frequencia relativa.
 
  ### 5.MODELO CONCEITUAL<br>
-    A) Utilizar a Notação adequada (Preferencialmente utilizar o BR Modelo 3)
-    B) O mínimo de entidades do modelo conceitual pare este trabalho será igual a 5 e o Máximo 7.
-        * informe quais são as 3 principais entidades do sistema em densenvolvimento<br>(se houverem mais de 3 entidades, pense na importância da entidade para o sistema)       
-    C) Principais fluxos de informação/entidades do sistema (mínimo 3). <br>Dica: normalmente estes fluxos estão associados as tabelas que conterão maior quantidade de dados 
-    D) Qualidade e Clareza
-        Garantir que a semântica dos atributos seja clara no esquema (nomes coerentes com os dados).
-        Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
-        e tuplas falsas (Aplicar os conceitos de normalização abordados).   
-        
+    
 ![image](https://user-images.githubusercontent.com/91472785/198711788-aa7b48be-f355-4aaf-a5f5-96619f6fa9c5.png)
 
     
@@ -47,7 +39,7 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
     
 #### 5.1 Validação do Modelo Conceitual
     Grupo 1: Ilanna,Mariana,Bruna,Daianny
-    [Grupo02]: [Nomes dos que participaram na avaliação]
+    
 
 #### 5.2 Descrição dos dados 
 
