@@ -43,7 +43,8 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
 
 #### 5.2 Descrição dos dados 
 
-    RESTAURANTE: Tabela que armazena os dados de cada restaurante
+    RESTAURANTE: Tabela que armazena os dados de cada restaurante. 
+    >Atributos: CNPJ, nome.
     PRODUTO: Tabela que armazena as informações dos produtos
     PEDIDO: Tabela que armazena as informações referentes dos pedidos
     ENTREGADOR: Tabela que armazena os dados do entregador
