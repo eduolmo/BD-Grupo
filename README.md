@@ -293,9 +293,17 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
 
 ![image](https://user-images.githubusercontent.com/91472785/198846779-0531fcb3-8bdc-4d8f-b5fe-0eaf30478608.png)
 	
-	
-	
-	
+![image](https://user-images.githubusercontent.com/91472785/198846908-f3a6492f-40c9-4fa9-baf8-8bcb65d0b579.png)
+![image](https://user-images.githubusercontent.com/91472785/198846926-17645286-6185-4389-9610-5d4717113da4.png)
+
+![image](https://user-images.githubusercontent.com/91472785/198846935-875e25d9-266f-46f0-9025-2ed86767c997.png)
+
+![image](https://user-images.githubusercontent.com/91472785/198846947-8567246c-a18f-4c9f-8ffb-95da6e92d0df.png)
+
+![image](https://user-images.githubusercontent.com/91472785/198846959-f73eca6b-df17-48ba-a4b4-b1334e4a164d.png)
+
+![image](https://user-images.githubusercontent.com/91472785/198846963-86d2b04c-92f1-4f8a-bf70-156eb75d8fdd.png)
+
 	
 	
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
