@@ -35,8 +35,6 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
 ![image](https://user-images.githubusercontent.com/91472785/198711788-aa7b48be-f355-4aaf-a5f5-96619f6fa9c5.png)
 
     
-        
-    
 #### 5.1 Validação do Modelo Conceitual
     Grupo 1: Ilanna,Mariana,Bruna,Daianny
     
@@ -50,17 +48,29 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
     Atributos: código do produto(identificador) e preço.
     
     PEDIDO: Tabela que armazena as informações referentes dos pedidos.
-    Atributos:
+    Atributos: código do pedido(identificador) e preço total.
     
     ENTREGADOR: Tabela que armazena os dados do entregador.
-    Atributos:
+    Atributos: CPF(identificador), nome, salário, e turno.
     
     CLIENTE: Tabela que armazena os dados dos clientes.
-    Atributos:
+    Atributos: CPF(identificador), nome e telefone.
     
     ENDERECO: Tabela que armazena o endereço dos clientes.
-    Atributos:
-
+    Atributos: número, rua e bairro.
+    
+    RESTAURANTE/PRODUTO(Produz): Um restaurante pode produzir um ou vários produtos, enquanto um produto pode ser produzido por um ou vários restaurantes.
+    
+    PRODUTO/PEDIDO(Compoe): Um produto pode compor um ou vários pedidos, assim como um pedido pode ser composto por um ou vários produtos. 
+    
+    PEDIDO/CLIENTE(Feito): Um cliente pode fazer um ou vários pedidos, ao mesmo tempo que um pedido pode ser feito por um ou vários clientes. 
+    
+    PEDIDO/ENTREGADOR(Retira): Um entregador pode retirar um ou vários pedidos, porém um pedido só pode ser retirado por apenas um entregador. 
+    
+    ENTREGADOR/CLIENTE(Entrega): Um entregador pode entregar para um ou vários clientes, e um cliente pode receber de um ou vários entregadores. Esse relacionamento possui o atributo data e hora.
+    
+    CLIENTE/ENDERECO(Possui): Um cliente possui apenas um endereço, e um endereço só pode estar relacionado a apenas um cliente.
+    
 
 ### 6	MODELO LÓGICO<br>
         
