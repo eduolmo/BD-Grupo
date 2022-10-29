@@ -173,11 +173,12 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
 
        
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
-        a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físico
-        (Drop para exclusão de tabelas + create definição de para tabelas e estruturas de dados + insert para dados a serem inseridos)
-        b) Criar um novo banco de dados para testar a restauracao 
-        (em caso de falha na restauração o grupo não pontuará neste quesito)
-        c) formato .SQL
+        insert into CLIENTE_ENDERECO
+	       values (11111111111, 'Pedro Augusto Pina', 998885430, 'Rua Castelo', 155, 'Jardim Limoeiro'),
+	       (22222222222, 'Álvares Virgulino',  999532192, 'Rua Rui Barbosa', 23, 'Bairro de Fátima'),
+	       (33333333333, 'João Pessoa Carlos', 988221445, 'Rua Limoeiro', 26, 'Barcelona'),
+	       (44444444444, 'Luís Augusto Silva', 992323555, 'Rua do Rosário', 55, 'Nova Almeida'),
+        (55555555555, 'Ricardo Jõao Orlando', 992365539, 'Rua Porto Alegre', 122, 'Nova Almeida');
 
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
