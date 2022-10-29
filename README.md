@@ -78,7 +78,15 @@ gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
 
 ### 7	MODELO FÍSICO<br>
         /* logico - trab grupo: */
-</p>
+        CREATE TABLE CLIENTE_ENDERECO (
+        cpf VARCHAR PRIMARY KEY,
+        nome VARCHAR,
+        telefone INTEGER,
+        rua VARCHAR,
+        numero INTEGER,
+        bairro VARCHAR
+        );
+
 CREATE TABLE CLIENTE_ENDERECO (
     cpf VARCHAR PRIMARY KEY,
     nome VARCHAR,
@@ -176,7 +184,7 @@ ALTER TABLE Feito ADD CONSTRAINT FK_Feito_2
     FOREIGN KEY (fk_CLIENTE_ENDERECO_cpf)
     REFERENCES CLIENTE_ENDERECO (cpf)
     ON DELETE RESTRICT;
-</p>
+
        
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
         a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físico
