@@ -203,7 +203,7 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
              ('333.333.333-44', 'Sônia Vasconcelos Santino', 'Vespertino', 1360.00),
              ('444.444.444-55', 'André Soares Batista', 'Matutino', 1450.00),
              ('555.555.555-66', 'Vilmar Santos da Cunha', 'Noturno', 1600.00),
-             ('666.666.666-77', 'Mario Fernandes Fellipy', Matutino, 1520.00),
+             ('666.666.666-77', 'Mario Fernandes Fellipy', 'Matutino', 1520.00),
              ('777.777.777-88', 'Laís Portinari Costa', 'Vespertino', 1480.00),
              ('888.888.888-99', 'Ariel Fago', 'Noturno', 1550.00),
              ('999.999.999-11', 'Luca Amorim', 'Noturno', 1580.00);
