@@ -174,11 +174,102 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
        
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
         insert into CLIENTE_ENDERECO
-	       values (11111111111, 'Pedro Augusto Pina', 998885430, 'Rua Castelo', 155, 'Jardim Limoeiro'),
-	       (22222222222, 'Álvares Virgulino',  999532192, 'Rua Rui Barbosa', 23, 'Bairro de Fátima'),
-	       (33333333333, 'João Pessoa Carlos', 988221445, 'Rua Limoeiro', 26, 'Barcelona'),
-	       (44444444444, 'Luís Augusto Silva', 992323555, 'Rua do Rosário', 55, 'Nova Almeida'),
-        (55555555555, 'Ricardo Jõao Orlando', 992365539, 'Rua Porto Alegre', 122, 'Nova Almeida');
+	values ('111.111.111-11', 'Pedro Augusto Pina', 998885430, 'Rua Castelo', 155, 'Jardim Limoeiro'),
+	       ('222.222.222-22', 'Álvares Virgulino',  999532192, 'Rua Rui Barbosa', 23, 'Bairro de Fátima'),
+	       ('333.333.333-33', 'Amanda Pessoa Carlos', 988221445, 'Rua Limoeiro', 26, 'Barcelona'),
+	       ('444.444.444-44', 'Luís Augusto Silva', 992323555, 'Rua do Rosário', 55, 'Nova Almeida'),
+         ('555.555.555-55', 'Paola Jõao Orlando', 992365539, 'Rua Porto Alegre', 122, 'Nova Almeida'),
+         ('666.666.666-66', 'Emanoel Silveira', 998644222, 'Rua Carvalho', 15, 'Barcelona'),
+         ('777.777.777-77', 'Moisés Lima Soares', 990843323, 'Rua Lázaro Verde', 35, 'Jardim Limoeiro'),
+         ('888.888.888-88', 'Sofia Pascal', 987657668, 'Rua Monte Seco', 52, 'Bairro de Fátima'),
+         ('999.999.999-99', 'Pâmela Oliveira Santos', 994523223, 'Rua Pimenta', 165, 'Nova Almeida');
+	
+	insert into RESTAURANTE
+      values ('12.332.646/0002-25', 'McDonalds'),
+             ('16.225.938/0002-17', 'BurgerKing'),
+             ('08.427.254/0002-19', 'Subway');
+	
+	insert into PRODUTO
+	values (01, 'Hambúrguer', 15.00),
+	       (02, 'Pizza', 40.00),
+	       (03, 'Água', 2.00),
+	       (04, 'Suco', 5.00),
+         (05, 'Refrigerante', 10.00),
+         (06, 'Batata', 8.50);
+	 
+	 insert into ENTREGADOR
+      values ('111.111.111-22', 'Paolo Versalhes Nunes', 'Matutino', 1500.00),
+             ('222.222.222-33', 'David Barcelos', 'Vespertino', 1200.00),
+             ('333.333.333-44', 'Sônia Vasconcelos Santino', 'Vespertino', 1360.00),
+             ('444.444.444-55', 'André Soares Batista', 'Matutino', 1450.00),
+             ('555.555.555-66', 'Vilmar Santos da Cunha', 'Noturno', 1600.00),
+             ('666.666.666-77', 'Mario Fernandes Fellipy', Matutino, 1520.00),
+             ('777.777.777-88', 'Laís Portinari Costa', 'Vespertino', 1480.00),
+             ('888.888.888-99', 'Ariel Fago', 'Noturno', 1550.00),
+             ('999.999.999-11', 'Luca Amorim', 'Noturno', 1580.00);
+	 
+	insert into PEDIDO
+	values (001, 28.50, '222.222.222-33', '111.111.111-11'),
+	       (002, 50.00, '222.222.222-33', '777.777.777-77'),
+	       (003, 15.00, '888.888.888-99', '999.999.999-99'),
+	       (004, 10.50, '666.666.666-77', '444.444.444-44'),
+         (005, 18.50, '333.333.333-44', '333.333.333-33'),
+         (006, 73.50, '111.111.111-22', '555.555.555-55'),
+         (007, 10.00, '444.444.444.55', '222.222.222-22'),
+         (008, 27.00, '444.444.444.55', '888.888.888-88'),
+         (009, 100.00, '333.333.333-44', '666.666.666-66'),
+         (010, 130.00, '999.999.999-11', '777.777.777-77');
+	
+	insert into Produz
+      values ('12.332.646/0002-25', 01),
+             ('12.332.646/0002-25', 02),
+             ('12.332.646/0002-25', 03),
+             ('12.332.646/0002-25', 04),
+             ('12.332.646/0002-25', 05),
+             ('12.332.646/0002-25', 06),
+             ('16.225.938/0002-17', 01),
+             ('16.225.938/0002-17', 02),
+             ('16.225.938/0002-17', 03),
+             ('16.225.938/0002-17', 04),
+             ('16.225.938/0002-17', 05),
+             ('16.225.938/0002-17', 06),
+             ('08.427.254/0002-19', 01),
+             ('08.427.254/0002-19', 02),
+             ('08.427.254/0002-19', 03),
+             ('08.427.254/0002-19', 04),
+             ('08.427.254/0002-19', 05),
+             ('08.427.254/0002-19', 06);
+	
+	insert into Compoe
+      values (01, 001),
+             (04, 001),
+             (06, 001),
+             (02, 002),
+             (05, 002),
+             (01, 003),
+             (03, 004),
+             (06, 004),
+             (05, 005),
+             (06, 005),
+             (01, 006),
+             (02, 006),
+             (05, 006),
+             (06, 006),
+             (05, 007),
+             (01, 008),
+             (03, 008),
+             (05, 008),
+             (02, 009),
+             (02, 009),
+             (05, 009),
+             (05, 009),
+             (02, 010),
+             (02, 010),
+	
+	
+	
+	
+	
 
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
