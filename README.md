@@ -62,7 +62,7 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
     
     PRODUTO/PEDIDO(Compoe): Um produto pode compor um ou vários pedidos, assim como um pedido pode ser composto por um ou vários produtos. 
     
-    PEDIDO/CLIENTE(Feito): Um cliente pode fazer um ou vários pedidos, ao mesmo tempo que um pedido pode ser feito por um ou vários clientes. 
+    PEDIDO/CLIENTE(Feito): Um cliente pode fazer um ou vários pedidos, mas um pedido só pode ser feito por apenas um único cliente.
     
     PEDIDO/ENTREGADOR(Retira): Um entregador pode retirar um ou vários pedidos, porém um pedido só pode ser retirado por apenas um entregador. 
     
@@ -73,7 +73,7 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
 
 ### 6	MODELO LÓGICO<br>
         
-![image](https://user-images.githubusercontent.com/91472785/198837789-d64e5826-a901-40cd-94b1-2a75dec99db6.png)
+![image](https://user-images.githubusercontent.com/91472785/198844430-11797413-f59b-4b27-a6d0-c93cfa3eabf3.png)
 
 ### 7	MODELO FÍSICO<br>
         
