@@ -283,7 +283,7 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
 
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
-    OBS: Usar o colab para apresentar os resultados que devem incluir as instruções SQL + resultados em forma de tabela.<br>
+    https://colab.research.google.com/drive/16b3oBZUtT7vv-7eI0l2TMzgiczN3K4W_?usp=sharing
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
 
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
