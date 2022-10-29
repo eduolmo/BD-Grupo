@@ -71,7 +71,7 @@ gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
 
 ### 6	MODELO LÓGICO<br>
         
- ![image](https://user-images.githubusercontent.com/91472785/198712571-cf8d3a91-0a5e-47d0-a322-80c3e82724a5.png)
+    ![image](https://user-images.githubusercontent.com/91472785/198712571-cf8d3a91-0a5e-47d0-a322-80c3e82724a5.png)
 
 
 ### 7	MODELO FÍSICO<br>
