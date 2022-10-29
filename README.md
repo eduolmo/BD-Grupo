@@ -88,95 +88,95 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
             bairro VARCHAR(100)
         );
 
-   CREATE TABLE PRODUTO (
-       cod_produto INTEGER PRIMARY KEY,
-       nome VARCHAR(100),
-       preco FLOAT
-   );
+    CREATE TABLE PRODUTO (
+        cod_produto INTEGER PRIMARY KEY,
+        nome VARCHAR(100),
+        preco FLOAT
+    );
 
-   CREATE TABLE RESTAURANTE (
-       cnpj VARCHAR(100) PRIMARY KEY,
-       nome VARCHAR(100)
-   );
+    CREATE TABLE RESTAURANTE (
+        cnpj VARCHAR(100) PRIMARY KEY,
+        nome VARCHAR(100)
+    );
 
-   CREATE TABLE ENTREGADOR (
-       cpf VARCHAR(100) PRIMARY KEY,
-       nome VARCHAR(100),
-       turno VARCHAR(100),
-       salario FLOAT
-   );
+    CREATE TABLE ENTREGADOR (
+        cpf VARCHAR(100) PRIMARY KEY,
+        nome VARCHAR(100),
+        turno VARCHAR(100),
+        salario FLOAT
+    );
 
-   CREATE TABLE PEDIDO (
-       cod_pedido INTEGER PRIMARY KEY,
-       preco_total FLOAT,
-       FK_ENTREGADOR_cpf VARCHAR(100)
-   );
+    CREATE TABLE PEDIDO (
+        cod_pedido INTEGER PRIMARY KEY,
+        preco_total FLOAT,
+        FK_ENTREGADOR_cpf VARCHAR(100)
+    );
 
-   CREATE TABLE Produz (
-       fk_RESTAURANTE_cnpj VARCHAR(100),
-       fk_PRODUTO_cod_produto INTEGER
-   );
+    CREATE TABLE Produz (
+        fk_RESTAURANTE_cnpj VARCHAR(100),
+        fk_PRODUTO_cod_produto INTEGER
+    );
 
-   CREATE TABLE Compoe (
-       fk_PRODUTO_cod_produto INTEGER,
-       fk_PEDIDO_cod_pedido INTEGER
-   );
+    CREATE TABLE Compoe (
+        fk_PRODUTO_cod_produto INTEGER,
+        fk_PEDIDO_cod_pedido INTEGER
+    );
 
-   CREATE TABLE Entrega (
-       fk_ENTREGADOR_cpf VARCHAR(100),
-       fk_CLIENTE_ENDERECO_cpf VARCHAR(100),
-       data_hora TIMESTAMP
-   );
+    CREATE TABLE Entrega (
+        fk_ENTREGADOR_cpf VARCHAR(100),
+        fk_CLIENTE_ENDERECO_cpf VARCHAR(100),
+        data_hora TIMESTAMP
+    );
 
-   CREATE TABLE Feito (
-       fk_PEDIDO_cod_pedido INTEGER,
-       fk_CLIENTE_ENDERECO_cpf VARCHAR(100)
-   );
+    CREATE TABLE Feito (
+        fk_PEDIDO_cod_pedido INTEGER,
+        fk_CLIENTE_ENDERECO_cpf VARCHAR(100)
+    );
 
-   ALTER TABLE PEDIDO ADD CONSTRAINT FK_PEDIDO_2
-       FOREIGN KEY (FK_ENTREGADOR_cpf)
-       REFERENCES ENTREGADOR (cpf)
-       ON DELETE RESTRICT;
+    ALTER TABLE PEDIDO ADD CONSTRAINT FK_PEDIDO_2
+        FOREIGN KEY (FK_ENTREGADOR_cpf)
+        REFERENCES ENTREGADOR (cpf)
+        ON DELETE RESTRICT;
 
-   ALTER TABLE Produz ADD CONSTRAINT FK_Produz_1
-       FOREIGN KEY (fk_RESTAURANTE_cnpj)
-       REFERENCES RESTAURANTE (cnpj)
-       ON DELETE RESTRICT;
+    ALTER TABLE Produz ADD CONSTRAINT FK_Produz_1
+        FOREIGN KEY (fk_RESTAURANTE_cnpj)
+        REFERENCES RESTAURANTE (cnpj)
+        ON DELETE RESTRICT;
 
-   ALTER TABLE Produz ADD CONSTRAINT FK_Produz_2
-       FOREIGN KEY (fk_PRODUTO_cod_produto)
-       REFERENCES PRODUTO (cod_produto)
-       ON DELETE RESTRICT;
+    ALTER TABLE Produz ADD CONSTRAINT FK_Produz_2
+        FOREIGN KEY (fk_PRODUTO_cod_produto)
+        REFERENCES PRODUTO (cod_produto)
+        ON DELETE RESTRICT;
 
-   ALTER TABLE Compoe ADD CONSTRAINT FK_Compoe_1
-       FOREIGN KEY (fk_PRODUTO_cod_produto)
-       REFERENCES PRODUTO (cod_produto)
-       ON DELETE RESTRICT;
+    ALTER TABLE Compoe ADD CONSTRAINT FK_Compoe_1
+        FOREIGN KEY (fk_PRODUTO_cod_produto)
+        REFERENCES PRODUTO (cod_produto)
+        ON DELETE RESTRICT;
 
-   ALTER TABLE Compoe ADD CONSTRAINT FK_Compoe_2
-       FOREIGN KEY (fk_PEDIDO_cod_pedido)
-       REFERENCES PEDIDO (cod_pedido)
-       ON DELETE RESTRICT;
+    ALTER TABLE Compoe ADD CONSTRAINT FK_Compoe_2
+        FOREIGN KEY (fk_PEDIDO_cod_pedido)
+        REFERENCES PEDIDO (cod_pedido)
+        ON DELETE RESTRICT;
 
-   ALTER TABLE Entrega ADD CONSTRAINT FK_Entrega_1
-       FOREIGN KEY (fk_ENTREGADOR_cpf)
-       REFERENCES ENTREGADOR (cpf)
-       ON DELETE RESTRICT;
+    ALTER TABLE Entrega ADD CONSTRAINT FK_Entrega_1
+        FOREIGN KEY (fk_ENTREGADOR_cpf)
+        REFERENCES ENTREGADOR (cpf)
+        ON DELETE RESTRICT;
 
-   ALTER TABLE Entrega ADD CONSTRAINT FK_Entrega_2
-       FOREIGN KEY (fk_CLIENTE_ENDERECO_cpf)
-       REFERENCES CLIENTE_ENDERECO (cpf)
-       ON DELETE RESTRICT;
+    ALTER TABLE Entrega ADD CONSTRAINT FK_Entrega_2
+        FOREIGN KEY (fk_CLIENTE_ENDERECO_cpf)
+        REFERENCES CLIENTE_ENDERECO (cpf)
+        ON DELETE RESTRICT;
 
-   ALTER TABLE Feito ADD CONSTRAINT FK_Feito_1
-       FOREIGN KEY (fk_PEDIDO_cod_pedido)
-       REFERENCES PEDIDO (cod_pedido)
-       ON DELETE RESTRICT;
+    ALTER TABLE Feito ADD CONSTRAINT FK_Feito_1
+        FOREIGN KEY (fk_PEDIDO_cod_pedido)
+        REFERENCES PEDIDO (cod_pedido)
+        ON DELETE RESTRICT;
 
-   ALTER TABLE Feito ADD CONSTRAINT FK_Feito_2
-       FOREIGN KEY (fk_CLIENTE_ENDERECO_cpf)
-       REFERENCES CLIENTE_ENDERECO (cpf)
-       ON DELETE RESTRICT;
+    ALTER TABLE Feito ADD CONSTRAINT FK_Feito_2
+        FOREIGN KEY (fk_CLIENTE_ENDERECO_cpf)
+        REFERENCES CLIENTE_ENDERECO (cpf)
+        ON DELETE RESTRICT;
 
 
 
