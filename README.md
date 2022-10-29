@@ -24,11 +24,11 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
 #### 4.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
     
 > A Empresa "AiQueFome!" precisa inicialmente dos seguintes relatórios:
-* Relatório que mostre o nome de cada supervisor(a) e a quantidade de empregados supervisionados.
-* Relatório relativo aos os supervisores e supervisionados. O resultado deve conter o nome do supervisor e nome do supervisionado além da quantidade total de horas que cada supervisionado tem alocada aos projetos existentes na empresa.
-* Relatorio que mostre para cada linha obtida o nome do departamento, o valor individual de cada salario existente no  departamento e a média geral de salarios dentre todos os empregados. Os resultados devem ser apresentados ordenados por departamento.
-* Relatório que mostre as informações relacionadas a todos empregados de empresa (sem excluir ninguém). As linhas resultantes devem conter informações sobre: rg, nome, salario do empregado, data de início do salario atual, nomes dos projetos que participa, quantidade de horas e localização nos referidos projetos, numero e nome dos departamentos aos quais está alocado, informações do historico de salário como inicio, fim, e valores de salarios antigos que foram inclusos na referida tabela (caso possuam informações na mesma), além de todas informações relativas aos dependentes. 
-* Relatório que obtenha a frequencia absoluta e frequencia relativa da quantidade de cpfs únicos no relatório anterior. Apresente os resultados ordenados de forma decrescente pela frequencia relativa.
+* Relatório que mostre o nome de cada entregador e a quantidade de entregas feitas por ele.
+* Relatório que apresente o nome do restaurante, a quantidade de produtos vendidos por ele e o valor total desses produtos.
+* Relatório que mostre a quantidade das entregas feitas após certo horário.
+* Relatório que mostre o nome de cada cliente e o valor total dos pedidos que esse cliente pediu.
+* Relatório que mostre o nome do bairro e a quantidade de clientes que residem nele, agrupando pelo bairro.
 
  ### 5.MODELO CONCEITUAL<br>
     
