@@ -80,40 +80,41 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
     drop table if exists CLIENTE_ENDERECO,PRODUTO,RESTAURANTE,ENTREGADOR,PEDIDO,Produz,Compoe,Entrega,Feito;
 
     CREATE TABLE CLIENTE_ENDERECO (
-            cpf VARCHAR(100) PRIMARY KEY,
-            nome VARCHAR(100),
-            telefone INTEGER,
-            rua VARCHAR(100),
-            numero INTEGER,
-            bairro VARCHAR(100)
-        );
+        cpf VARCHAR PRIMARY KEY,
+        nome VARCHAR,
+        telefone INTEGER,
+        rua VARCHAR,
+        numero INTEGER,
+        bairro VARCHAR
+    );
 
     CREATE TABLE PRODUTO (
         cod_produto INTEGER PRIMARY KEY,
-        nome VARCHAR(100),
-        preco FLOAT
+        preco FLOAT,
+        nome VARCHAR
     );
 
     CREATE TABLE RESTAURANTE (
-        cnpj VARCHAR(100) PRIMARY KEY,
-        nome VARCHAR(100)
+        cnpj VARCHAR PRIMARY KEY,
+        nome VARCHAR
     );
 
     CREATE TABLE ENTREGADOR (
-        cpf VARCHAR(100) PRIMARY KEY,
-        nome VARCHAR(100),
-        turno VARCHAR(100),
+        cpf VARCHAR PRIMARY KEY,
+        nome VARCHAR,
+        turno VARCHAR,
         salario FLOAT
     );
 
     CREATE TABLE PEDIDO (
         cod_pedido INTEGER PRIMARY KEY,
         preco_total FLOAT,
-        FK_ENTREGADOR_cpf VARCHAR(100)
+        FK_ENTREGADOR_cpf VARCHAR,
+        FK_CLIENTE_ENDERECO_cpf VARCHAR
     );
 
     CREATE TABLE Produz (
-        fk_RESTAURANTE_cnpj VARCHAR(100),
+        fk_RESTAURANTE_cnpj VARCHAR,
         fk_PRODUTO_cod_produto INTEGER
     );
 
@@ -123,19 +124,19 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
     );
 
     CREATE TABLE Entrega (
-        fk_ENTREGADOR_cpf VARCHAR(100),
-        fk_CLIENTE_ENDERECO_cpf VARCHAR(100),
+        fk_ENTREGADOR_cpf VARCHAR,
+        fk_CLIENTE_ENDERECO_cpf VARCHAR,
         data_hora TIMESTAMP
-    );
-
-    CREATE TABLE Feito (
-        fk_PEDIDO_cod_pedido INTEGER,
-        fk_CLIENTE_ENDERECO_cpf VARCHAR(100)
     );
 
     ALTER TABLE PEDIDO ADD CONSTRAINT FK_PEDIDO_2
         FOREIGN KEY (FK_ENTREGADOR_cpf)
         REFERENCES ENTREGADOR (cpf)
+        ON DELETE RESTRICT;
+
+    ALTER TABLE PEDIDO ADD CONSTRAINT FK_PEDIDO_3
+        FOREIGN KEY (FK_CLIENTE_ENDERECO_cpf)
+        REFERENCES CLIENTE_ENDERECO (cpf)
         ON DELETE RESTRICT;
 
     ALTER TABLE Produz ADD CONSTRAINT FK_Produz_1
@@ -164,16 +165,6 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
         ON DELETE RESTRICT;
 
     ALTER TABLE Entrega ADD CONSTRAINT FK_Entrega_2
-        FOREIGN KEY (fk_CLIENTE_ENDERECO_cpf)
-        REFERENCES CLIENTE_ENDERECO (cpf)
-        ON DELETE RESTRICT;
-
-    ALTER TABLE Feito ADD CONSTRAINT FK_Feito_1
-        FOREIGN KEY (fk_PEDIDO_cod_pedido)
-        REFERENCES PEDIDO (cod_pedido)
-        ON DELETE RESTRICT;
-
-    ALTER TABLE Feito ADD CONSTRAINT FK_Feito_2
         FOREIGN KEY (fk_CLIENTE_ENDERECO_cpf)
         REFERENCES CLIENTE_ENDERECO (cpf)
         ON DELETE RESTRICT;
