@@ -17,7 +17,7 @@ Elisa Andrade de Jesus:moon.anonimos.es@gmail.com<br>
 
 ### 3.MINI-MUNDO<br>
 
->O aplicativo "AiQueFome!" foi feito para facilitar e otimizar os serviços de delivery de restaurantes e possibilitar que o clientes tenham acesso a diversos produtos alimentícios em um só lugar. Dessa forma o "AiQueFome!" criou um sistema que funciona da seguinte forma: Restaurante produz produto, o qual compõe o pedido, que é retirado pelo Entregador para ser entregue ao cliente, que possui um endereço. Do restaurante será armazenado o CNPJ (atributo identificador), e nome. Do produto armazenaremos código do produto(identificador) e preço. Do pedido armazenaremos código do pedido, seu atributo identificador, e o seu preço total. Do entregador armazenaremos cpf, que é seu identificador, turno, salário e nome. Do cliente armazenaremos: cpf(identificador), nome e telefone. Do endereço armazenaremos as informações de rua, número e bairro. Da relação de entrega armazenaremos a data e hora.<br>
+>O aplicativo "AiQueFome!" foi feito para facilitar e otimizar os serviços de delivery de restaurantes e possibilitar que o clientes tenham acesso a diversos produtos alimentícios em um só lugar. Dessa forma o "AiQueFome!" criou um sistema que funciona da seguinte forma: Restaurante produz produto, o qual compõe o pedido, que é retirado pelo Entregador para ser entregue ao cliente, que possui um endereço. Do restaurante será armazenado o CNPJ (atributo identificador), e nome. Do produto armazenaremos código do produto(identificador), nome e preço. Do pedido armazenaremos código do pedido, seu atributo identificador, e o seu preço total. Do entregador armazenaremos cpf, que é seu identificador, turno, salário e nome. Do cliente armazenaremos: cpf(identificador), nome e telefone. Do endereço armazenaremos as informações de rua, número e bairro. Da relação de entrega armazenaremos a data e hora.<br>
 Um restaurante pode produzir um ou vários produtos, enquanto um produto pode ser produzido por um ou vários restaurantes. Um produto pode compor um ou vários pedidos, assim como um pedido pode ser composto por um ou vários produtos. Um cliente pode fazer um ou vários pedidos, ao mesmo tempo que um pedido pode ser feito por um ou vários clientes. Um entregador pode retirar um ou vários pedidos, porém um pedido só pode ser retirado por apenas um entregador. Um entregador pode entregar para um ou vários clientes, e um cliente pode receber de um ou vários entregadores. Por fim, um  cliente possui apenas um endereço, e um endereço só pode estar relacionado a apenas um cliente.
 
 ### 4.PERGUNTAS A SEREM RESPONDIDAS E TABELA DE DADOS<br>
@@ -32,8 +32,7 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
 
  ### 5.MODELO CONCEITUAL<br>
     
-![image](https://user-images.githubusercontent.com/91472785/198711788-aa7b48be-f355-4aaf-a5f5-96619f6fa9c5.png)
-
+![image](https://user-images.githubusercontent.com/91472785/198836936-49d3cccc-66fb-4ca6-8d36-9e037e484eac.png)
     
 #### 5.1 Validação do Modelo Conceitual
     Grupo 1: Ilanna,Mariana,Bruna,Daianny
@@ -45,7 +44,7 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
     Atributos: CNPJ(identificador) e nome.
     
     PRODUTO: Tabela que armazena as informações dos produtos.
-    Atributos: código do produto(identificador) e preço.
+    Atributos: código do produto(identificador), nome e preço.
     
     PEDIDO: Tabela que armazena as informações referentes dos pedidos.
     Atributos: código do pedido(identificador) e preço total.
