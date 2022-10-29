@@ -56,15 +56,17 @@ gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
         
     
 #### 5.1 Validação do Modelo Conceitual
-    [Grupo01]: [Nomes dos que participaram na avaliação]
+    Grupo 1: Ilanna,Mariana,Bruna,Daianny
     [Grupo02]: [Nomes dos que participaram na avaliação]
 
 #### 5.2 Descrição dos dados 
-    [objeto]: [descrição do objeto]
-    
-    EXEMPLO:
-    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
-    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
+
+    RESTAURANTE: Tabela que armazena os dados de cada restaurante
+    PRODUTO: Tabela que armazena as informações dos produtos
+    PEDIDO: Tabela que armazena as informações referentes dos pedidos
+    ENTREGADOR: Tabela que armazena os dados do entregador
+    CLIENTE: Tabela que armazena os dados dos clientes
+    ENDERECO: Tabela que armazena o endereço dos clientes
 
 
 ### 6	MODELO LÓGICO<br>
@@ -76,7 +78,7 @@ gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
 
 ### 7	MODELO FÍSICO<br>
         /* logico - trab grupo: */
-
+</p>
 CREATE TABLE CLIENTE_ENDERECO (
     cpf VARCHAR PRIMARY KEY,
     nome VARCHAR,
@@ -174,7 +176,7 @@ ALTER TABLE Feito ADD CONSTRAINT FK_Feito_2
     FOREIGN KEY (fk_CLIENTE_ENDERECO_cpf)
     REFERENCES CLIENTE_ENDERECO (cpf)
     ON DELETE RESTRICT;
-        
+</p>
        
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
         a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físico
