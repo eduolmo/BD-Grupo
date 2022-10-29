@@ -46,11 +46,20 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
     RESTAURANTE: Tabela que armazena os dados de cada restaurante. 
     Atributos: CNPJ(identificador) e nome.
     
-    PRODUTO: Tabela que armazena as informações dos produtos
-    PEDIDO: Tabela que armazena as informações referentes dos pedidos
-    ENTREGADOR: Tabela que armazena os dados do entregador
-    CLIENTE: Tabela que armazena os dados dos clientes
-    ENDERECO: Tabela que armazena o endereço dos clientes
+    PRODUTO: Tabela que armazena as informações dos produtos.
+    Atributos: código do produto(identificador) e preço.
+    
+    PEDIDO: Tabela que armazena as informações referentes dos pedidos.
+    Atributos:
+    
+    ENTREGADOR: Tabela que armazena os dados do entregador.
+    Atributos:
+    
+    CLIENTE: Tabela que armazena os dados dos clientes.
+    Atributos:
+    
+    ENDERECO: Tabela que armazena o endereço dos clientes.
+    Atributos:
 
 
 ### 6	MODELO LÓGICO<br>
