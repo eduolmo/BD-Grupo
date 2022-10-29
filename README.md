@@ -90,8 +90,8 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
 
     CREATE TABLE PRODUTO (
         cod_produto INTEGER PRIMARY KEY,
-        preco FLOAT,
-        nome VARCHAR
+	nome VARCHAR,
+        preco FLOAT        
     );
 
     CREATE TABLE RESTAURANTE (
