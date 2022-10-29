@@ -32,8 +32,8 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
 
  ### 5.MODELO CONCEITUAL<br>
     
-![image](https://user-images.githubusercontent.com/91472785/198836936-49d3cccc-66fb-4ca6-8d36-9e037e484eac.png)
-    
+![image](https://user-images.githubusercontent.com/91472785/198844099-25790dff-97b7-4ca5-8686-54a0d476b4a0.png)
+
 #### 5.1 Validação do Modelo Conceitual
     Grupo 1: Ilanna,Mariana,Bruna,Daianny
     
