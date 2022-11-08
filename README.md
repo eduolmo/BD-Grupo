@@ -56,7 +56,7 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
     Atributos: CPF(identificador), nome e telefone.
     
     ENDERECO: Tabela que armazena o endereço dos clientes.
-    Atributos: número, rua e bairro.
+    Atributos: número, tipo logradouro, nome logradouro e bairro.
     
     RESTAURANTE/PRODUTO(Produz): Um restaurante pode produzir um ou vários produtos, enquanto um produto pode ser produzido por um ou vários restaurantes.
     
