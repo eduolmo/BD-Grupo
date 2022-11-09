@@ -443,7 +443,7 @@ inner join pedido<br>
 on (entregador.fk_pessoa_cpf = pedido.fk_entregador_fk_pessoa_cpf)<br>
 group by pessoa.nome;
 
-![image](https://user-images.githubusercontent.com/92343021/200931502-7b79a11a-ded7-4916-9e1f-df262bf5f3ef.png)
+![image](https://user-images.githubusercontent.com/92343021/200932809-0d143044-8e29-4ab3-8286-66e9bc5a05ca.png)
 
 #### 9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4)<br>
     a) Criar minimo 1 de cada tipo
