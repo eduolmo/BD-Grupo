@@ -454,6 +454,15 @@ on (restaurante.cnpj = pedido.fk_restaurante_cnpj)<br>
 group by restaurante.nome;<br>
 ![image](https://user-images.githubusercontent.com/92343021/200934612-4c5f5392-41a8-4976-ace0-e7ee2fb150cc.png)
 
+select pessoa.nome, sum(pedido.preco_total) as valor_total<br><br>
+from pessoa<br>
+inner join cliente_endereco<br>
+on (pessoa.cpf = cliente_endereco.fk_pessoa_cpf)<br>
+inner join pedido<br>
+on (cliente_endereco.fk_pessoa_cpf = pedido.fk_cliente_endereco_fk_pessoa_cpf)<br>
+group by pessoa.nome;<br>
+![image](https://user-images.githubusercontent.com/92343021/200936150-4f848acb-3bfe-4d56-9764-06f8fca3bc79.png)
+
 
 #### 9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4)<br>
     a) Criar minimo 1 de cada tipo
