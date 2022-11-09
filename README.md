@@ -454,7 +454,7 @@ on (restaurante.cnpj = pedido.fk_restaurante_cnpj)<br>
 group by restaurante.nome;<br>
 ![image](https://user-images.githubusercontent.com/92343021/200934612-4c5f5392-41a8-4976-ace0-e7ee2fb150cc.png)
 
-select pessoa.nome, sum(pedido.preco_total) as valor_total<br><br>
+select pessoa.nome, sum(pedido.preco_total) as valor_total<br>
 from pessoa<br>
 inner join cliente_endereco<br>
 on (pessoa.cpf = cliente_endereco.fk_pessoa_cpf)<br>
