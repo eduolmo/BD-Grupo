@@ -100,8 +100,8 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
 	);
 
 	CREATE TABLE ENTREGADOR (
-	    salario FLOAT,
 	    turno VARCHAR(80),
+	    salario FLOAT,
 	    FK_PESSOA_cpf VARCHAR(14) PRIMARY KEY
 	);
 
