@@ -321,7 +321,8 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
     
     SEGUNDO:
     select * from PEDIDO where preco_total*50/100 > 2^4;
-    ![image](https://user-images.githubusercontent.com/103542882/200878884-9f59d346-cb9b-46e9-aed1-f55c104067e0.png)
+    ![image](https://user-images.githubusercontent.com/103542882/200879460-a74e0f2b-095a-4766-abc1-5169b7479128.png)
+
 
     
     
