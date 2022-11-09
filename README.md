@@ -397,7 +397,7 @@ select * from PEDIDO where preco_total*50/100 > 2^4;<br>
     a) Criar outras 5 consultas que envolvam like ou ilike
     
 select * from produto where nome like '%a';<br>
-![image](https://user-images.githubusercontent.com/91472785/200922969-684da5ff-f44a-41ce-a910-0fe4a87bb586.png)
+![image](https://user-images.githubusercontent.com/91472785/200929491-c63e0e0c-53b4-46fc-bc5d-1eff19aef403.png)
 
 select * from cliente_endereco where bairro like 'B%';<br>
 ![image](https://user-images.githubusercontent.com/91472785/200926258-f6f1d9cf-a5bf-4d35-9608-8e71438cf221.png)
