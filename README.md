@@ -419,6 +419,8 @@ select * from pessoa where nome like 'P%' or nome like 'A%';<br>
 select *, current_date - data_hora as tempo from pedido;<br>
 ![image](https://user-images.githubusercontent.com/91472785/200928079-daff01c3-e1a9-409a-bb46-fdeaa38a2384.png)
 
+select *, now() - data_hora as tempo from entregador_cliente;<br>
+![image](https://user-images.githubusercontent.com/91472785/200932734-b67bd5f6-c4d7-4f75-814d-47c1430a0626.png)
 
 
 
