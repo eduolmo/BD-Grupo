@@ -442,8 +442,15 @@ on (pessoa.cpf = entregador.fk_pessoa_cpf)<br>
 inner join pedido<br>
 on (entregador.fk_pessoa_cpf = pedido.fk_entregador_fk_pessoa_cpf)<br>
 group by pessoa.nome;
-
 ![image](https://user-images.githubusercontent.com/92343021/200932809-0d143044-8e29-4ab3-8286-66e9bc5a05ca.png)
+
+select restaurante.nome, count(pedido.cod_pedido) as qtd_pedidos, sum(pedido.preco_total) as valor_total<br>
+from restaurante<br>
+inner join pedido<br>
+on (restaurante.cnpj = pedido.fk_restaurante_cnpj)<br>
+group by restaurante.nome;
+![image](https://user-images.githubusercontent.com/92343021/200934612-4c5f5392-41a8-4976-ace0-e7ee2fb150cc.png)
+
 
 #### 9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4)<br>
     a) Criar minimo 1 de cada tipo
