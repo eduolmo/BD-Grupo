@@ -338,6 +338,8 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
     a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
     b) Criar no mínimo 3 consultas com operadores aritméticos 
+    c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
+    
 select *from Produto where preco > 10.00 and preco <30.00 ;<br>
 ![image](https://user-images.githubusercontent.com/91472785/200879239-f0659eb7-7034-4e3e-94a1-6dcbd255c0e5.png)
 
@@ -371,8 +373,6 @@ select * from PEDIDO where preco_total*50/100 > 2^4;<br>
 
 
     
-    
-    c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
 
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
     a) Criar outras 5 consultas que envolvam like ou ilike
