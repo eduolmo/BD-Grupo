@@ -417,10 +417,13 @@ select * from pessoa where nome like 'P%' or nome like 'A%';<br>
     b) Criar uma consulta para cada tipo de função data apresentada.
 
 select *, current_date - data_hora as tempo from pedido;<br>
-![image](https://user-images.githubusercontent.com/91472785/200928079-daff01c3-e1a9-409a-bb46-fdeaa38a2384.png)
+![image](https://user-images.githubusercontent.com/91472785/200935520-e6d593d7-8fc0-459b-b9b2-548a6d13270a.png)
 
 select *, now() - data_hora as tempo from entregador_cliente;<br>
-![image](https://user-images.githubusercontent.com/91472785/200932734-b67bd5f6-c4d7-4f75-814d-47c1430a0626.png)
+![image](https://user-images.githubusercontent.com/91472785/200935207-eb8d4aa5-440b-4377-9748-17e8aef8c343.png)
+
+select *, age(current_date,data_hora) as tempo from pedido;<br>
+![image](https://user-images.githubusercontent.com/91472785/200935054-33f136ac-39b2-41ad-9c17-5c93f8a29f3e.png)
 
 
 
