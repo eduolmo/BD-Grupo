@@ -80,47 +80,47 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
    	drop table if exists CLIENTE_ENDERECO,PRODUTO,RESTAURANTE,ENTREGADOR,PEDIDO,PESSOA,RESTAURANTE_PRODUTO,PRODUTO_PEDIDO,ENTREGADOR_CLIENTE;
 
 	CREATE TABLE RESTAURANTE (
-	    cnpj VARCHAR PRIMARY KEY,
-	    nome VARCHAR
+	    cnpj VARCHAR(18) PRIMARY KEY,
+	    nome VARCHAR(80)
 	);
 
 	CREATE TABLE PRODUTO (
 	    cod_produto INTEGER PRIMARY KEY,
-	    preco FLOAT,
-	    nome VARCHAR
+	    nome VARCHAR(80),
+	    preco FLOAT
 	);
 
 	CREATE TABLE PEDIDO (
 	    cod_pedido INTEGER PRIMARY KEY,
-	    FK_RESTAURANTE_cnpj VARCHAR,
+	    FK_RESTAURANTE_cnpj VARCHAR(18),
 	    preco_total FLOAT,
-	    FK_ENTREGADOR_FK_PESSOA_cpf VARCHAR,
-	    FK_CLIENTE_ENDERECO_FK_PESSOA_cpf VARCHAR,
+	    FK_ENTREGADOR_FK_PESSOA_cpf VARCHAR(14),
+	    FK_CLIENTE_ENDERECO_FK_PESSOA_cpf VARCHAR(14),
 	    data_hora TIMESTAMP
 	);
 
 	CREATE TABLE ENTREGADOR (
 	    salario FLOAT,
-	    turno VARCHAR,
-	    FK_PESSOA_cpf VARCHAR PRIMARY KEY
+	    turno VARCHAR(80),
+	    FK_PESSOA_cpf VARCHAR(14) PRIMARY KEY
 	);
 
 	CREATE TABLE CLIENTE_ENDERECO (
 	    telefone INTEGER,
-	    FK_PESSOA_cpf VARCHAR PRIMARY KEY,
-	    bairro VARCHAR,
-	    tipo_logradouro VARCHAR,
+	    FK_PESSOA_cpf VARCHAR(14) PRIMARY KEY,
+	    bairro VARCHAR(100),
+	    tipo_logradouro VARCHAR(100),
 	    numero INTEGER,
-	    nome_logradouro VARCHAR
+	    nome_logradouro VARCHAR(100)
 	);
 
 	CREATE TABLE PESSOA (
-	    cpf VARCHAR PRIMARY KEY,
-	    nome VARCHAR
+	    cpf VARCHAR(14) PRIMARY KEY,
+	    nome VARCHAR(80)
 	);
 
 	CREATE TABLE RESTAURANTE_PRODUTO (
-	    fk_RESTAURANTE_cnpj VARCHAR,
+	    fk_RESTAURANTE_cnpj VARCHAR(18),
 	    fk_PRODUTO_cod_produto INTEGER
 	);
 
@@ -130,8 +130,8 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
 	);
 
 	CREATE TABLE ENTREGADOR_CLIENTE (
-	    fk_ENTREGADOR_FK_PESSOA_cpf VARCHAR,
-	    fk_CLIENTE_ENDERECO_FK_PESSOA_cpf VARCHAR,
+	    fk_ENTREGADOR_FK_PESSOA_cpf VARCHAR(14),
+	    fk_CLIENTE_ENDERECO_FK_PESSOA_cpf VARCHAR(14),
 	    FK_PEDIDO_cod_pedido INTEGER PRIMARY KEY,
 	    data_hora TIMESTAMP
 	);
