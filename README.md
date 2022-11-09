@@ -31,8 +31,8 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
 * Relatório que mostre o nome do bairro e a quantidade de clientes que residem nele, agrupando pelo bairro.
 
  ### 5.MODELO CONCEITUAL<br>
-    
-![image](https://user-images.githubusercontent.com/91472785/198844692-411f3e0b-e0f6-4a1b-97db-5d6f74b4ca0c.png)
+
+![image](https://user-images.githubusercontent.com/91472785/200862372-6406375c-32ed-410d-bfba-85d0bad21ae1.png)
     
 #### 5.1 Validação do Modelo Conceitual
     Grupo 1: Ilanna,Mariana,Bruna,Daianny
@@ -73,7 +73,7 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
 
 ### 6	MODELO LÓGICO<br>
         
-![image](https://user-images.githubusercontent.com/91472785/198844430-11797413-f59b-4b27-a6d0-c93cfa3eabf3.png)
+![image](https://user-images.githubusercontent.com/91472785/200862593-c2a9967d-60b1-4058-a93d-6822135663a3.png)
 
 ### 7	MODELO FÍSICO<br>
         
