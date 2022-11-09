@@ -339,9 +339,9 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
 
 ![image](https://user-images.githubusercontent.com/92343021/200924753-92d9af97-69f1-4a11-b224-1e11024fadc9.png)
 
-![image](https://user-images.githubusercontent.com/91472785/198846779-0531fcb3-8bdc-4d8f-b5fe-0eaf30478608.png)
+![image](https://user-images.githubusercontent.com/92343021/200924992-87ddba3f-0553-40b0-b8aa-141ce2aead88.png)
 	
-![image](https://user-images.githubusercontent.com/91472785/198846908-f3a6492f-40c9-4fa9-baf8-8bcb65d0b579.png)
+![image](https://user-images.githubusercontent.com/92343021/200925283-44ee2b78-922e-4422-895b-99f2c88f70ce.png)
 ![image](https://user-images.githubusercontent.com/91472785/198846926-17645286-6185-4389-9610-5d4717113da4.png)
 
 ![image](https://user-images.githubusercontent.com/91472785/198846935-875e25d9-266f-46f0-9025-2ed86767c997.png)
