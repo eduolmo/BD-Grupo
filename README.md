@@ -395,8 +395,21 @@ select * from PEDIDO where preco_total*50/100 > 2^4;<br>
 
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
     a) Criar outras 5 consultas que envolvam like ou ilike
-    select * from produto where nome like '%a';
-    ![image](https://user-images.githubusercontent.com/91472785/200922969-684da5ff-f44a-41ce-a910-0fe4a87bb586.png)
+    
+select * from produto where nome like '%a';<br>
+![image](https://user-images.githubusercontent.com/91472785/200922969-684da5ff-f44a-41ce-a910-0fe4a87bb586.png)
+
+select * from cliente_endereco where bairro like 'B%';<br>
+![image](https://user-images.githubusercontent.com/91472785/200926258-f6f1d9cf-a5bf-4d35-9608-8e71438cf221.png)
+
+select * from entregador where turno like 'V%';<br>
+![image](https://user-images.githubusercontent.com/91472785/200926333-81451549-def7-4409-8025-9fd2df8589c9.png)
+
+select * from restaurante where nome like '%u%';<br>
+![image](https://user-images.githubusercontent.com/91472785/200926454-b423337a-f1cc-4ceb-8389-8615db1deccd.png)
+
+select * from pessoa where nome like 'P%' or nome like 'A%';<br>
+![image](https://user-images.githubusercontent.com/91472785/200926521-58335f8f-0404-491a-971a-8fe23e79fe30.png)
 
     
     b) Criar uma consulta para cada tipo de função data apresentada.
