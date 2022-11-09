@@ -414,6 +414,13 @@ select * from pessoa where nome like 'P%' or nome like 'A%';<br>
     
     b) Criar uma consulta para cada tipo de função data apresentada.
 
+select *, current_date - data_hora as tempo from pedido;<br>
+![image](https://user-images.githubusercontent.com/91472785/200927890-fdb489c2-bb4e-48a2-91cc-a1948cb05e21.png)
+
+
+
+
+
 #### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
     a) Criar minimo 3 de exclusão
     b) Criar minimo 3 de atualização
