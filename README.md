@@ -253,7 +253,7 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
            (03, 'Água', 2.00),
            (04, 'Suco', 5.00),
            (05, 'Refrigerante', 10.00),
-           (06, 'Batata', 8.50);
+           (06, 'Batata Frita', 8.50);
 		   
  
 	insert into PEDIDO
@@ -339,7 +339,7 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
 
 ![image](https://user-images.githubusercontent.com/92343021/200924753-92d9af97-69f1-4a11-b224-1e11024fadc9.png)
 
-![image](https://user-images.githubusercontent.com/92343021/200924992-87ddba3f-0553-40b0-b8aa-141ce2aead88.png)
+![image](https://user-images.githubusercontent.com/91472785/200929881-f88f90ba-45e8-4c75-a48e-15643f39f98a.png)
 	
 ![image](https://user-images.githubusercontent.com/92343021/200925283-44ee2b78-922e-4422-895b-99f2c88f70ce.png)
 
