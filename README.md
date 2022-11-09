@@ -335,9 +335,9 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
     
     
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
-![image](https://user-images.githubusercontent.com/91472785/198846699-daf8ac1c-c368-4b5c-801b-a48201aaf46e.png)
+![image](https://user-images.githubusercontent.com/92343021/200924692-6edc974e-bd6d-4706-a4ff-fa58f2a2d9b2.png)
 
-![image](https://user-images.githubusercontent.com/91472785/198846731-ca4c5bb2-cbd7-4ce5-9960-4bd8ebe5b297.png)
+![image](https://user-images.githubusercontent.com/92343021/200924753-92d9af97-69f1-4a11-b224-1e11024fadc9.png)
 
 ![image](https://user-images.githubusercontent.com/91472785/198846779-0531fcb3-8bdc-4d8f-b5fe-0eaf30478608.png)
 	
