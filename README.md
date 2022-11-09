@@ -396,6 +396,10 @@ select * from PEDIDO where preco_total*50/100 > 2^4;<br>
 
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
     a) Criar outras 5 consultas que envolvam like ou ilike
+    select * from produto where nome like '%a';
+    ![image](https://user-images.githubusercontent.com/91472785/200922969-684da5ff-f44a-41ce-a910-0fe4a87bb586.png)
+
+    
     b) Criar uma consulta para cada tipo de função data apresentada.
 
 #### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
