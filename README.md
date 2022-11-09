@@ -337,8 +337,6 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
     a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
-    b) Criar no mínimo 3 consultas com operadores aritméticos 
-    c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
     
 select *from Produto where preco > 10.00 and preco <30.00 ;<br>
 ![image](https://user-images.githubusercontent.com/91472785/200879239-f0659eb7-7034-4e3e-94a1-6dcbd255c0e5.png)
@@ -360,18 +358,18 @@ select *from Cliente_Endereco where (rua<>'Rua Pimenta' or bairro<>'Nova Almeida
 
 select *from Pedido where not preco_total =50.00 or FK_ENTREGADOR_cpf<>'222.222.222-33';<br>
 ![image](https://user-images.githubusercontent.com/91472785/200879390-a37c5335-de13-442c-80a4-8a58ef7fb95e.png)
- 
+	
+	b) Criar no mínimo 3 consultas com operadores aritméticos 
+    
 PRIMEIRO:
 select * from COMPOE where fk_PRODUTO_cod_produto > 2*2;<br>
 ![image](https://user-images.githubusercontent.com/103542882/200878717-cfa2fa85-37b0-46cd-b8b3-8b3c3bc36f8f.png)
-
-
 
 SEGUNDO:
 select * from PEDIDO where preco_total*50/100 > 2^4;<br>
 ![image](https://user-images.githubusercontent.com/103542882/200879460-a74e0f2b-095a-4766-abc1-5169b7479128.png)
 
-
+	c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
     
 
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
