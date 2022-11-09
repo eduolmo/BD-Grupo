@@ -312,7 +312,27 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
     a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
     b) Criar no mínimo 3 consultas com operadores aritméticos 
-    
+select *from Produto where preco > 10.00 and preco <30.00 ;
+![image](https://user-images.githubusercontent.com/91472785/200879239-f0659eb7-7034-4e3e-94a1-6dcbd255c0e5.png)
+
+select *from Entrega where(data_hora <>'2022-07-26 18:06:39'and data_hora='2022-09-12 12:20:50') or fk_ENTREGADOR_cpf<>'444.444.444-55';
+![image](https://user-images.githubusercontent.com/91472785/200879269-508510b9-d4f6-4d34-a19f-7f068162a6c7.png)
+
+select *from Entregador where(turno<>'Noturno'or turno='Matutino') and salario >=1200.00;
+![image](https://user-images.githubusercontent.com/91472785/200879299-4dfbf220-3999-4ed2-aba3-9e1edfc591df.png)
+
+select *from Entregador where(turno<>'Noturno'or turno='Vespertino') and salario >=1300.00;
+![image](https://user-images.githubusercontent.com/91472785/200879338-6798cd18-0a72-4be8-8af9-24b09f282b47.png)
+
+select *from Pedido where preco_total < 20.00 or cod_pedido<>005;
+![image](https://user-images.githubusercontent.com/91472785/200879352-46c7d462-59e0-429e-aac2-402de07fe17c.png)
+
+select *from Cliente_Endereco where (rua<>'Rua Pimenta' or bairro<>'Nova Almeida')and not rua='Rua do Rosário';
+![image](https://user-images.githubusercontent.com/91472785/200879371-5480bd1e-6392-4d19-9e75-b013677924b2.png)
+
+select *from Pedido where not preco_total =50.00 or FK_ENTREGADOR_cpf<>'222.222.222-33';
+![image](https://user-images.githubusercontent.com/91472785/200879390-a37c5335-de13-442c-80a4-8a58ef7fb95e.png)
+ 
     PRIMEIRO:
     select * from COMPOE where fk_PRODUTO_cod_produto > 2*2;
     ![image](https://user-images.githubusercontent.com/103542882/200878717-cfa2fa85-37b0-46cd-b8b3-8b3c3bc36f8f.png)
