@@ -309,6 +309,18 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
+select * from Pedido where preco_total > 30;
+![image](https://user-images.githubusercontent.com/91472785/200878357-08a6c44f-757e-45c7-9994-6585aabc8f29.png)
+
+select nome, cpf from Cliente_Endereco where telefone <> '987657668';
+![image](https://user-images.githubusercontent.com/91472785/200878298-1072d967-e10c-4da1-a38e-163344fd4c23.png)
+
+select *from Entregador where turno <> 'Matutino';
+![image](https://user-images.githubusercontent.com/91472785/200878385-4282a154-3217-45cd-8d22-a2886aa08240.png)
+
+select *from Produto where preco > 10.00 ;
+![image](https://user-images.githubusercontent.com/91472785/200878426-c182725e-b3b4-4f40-b9b4-06edfa9ca7bb.png)
+
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
     a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
     b) Criar no mínimo 3 consultas com operadores aritméticos 
