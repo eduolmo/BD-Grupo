@@ -415,7 +415,7 @@ select * from pessoa where nome like 'P%' or nome like 'A%';<br>
     b) Criar uma consulta para cada tipo de função data apresentada.
 
 select *, current_date - data_hora as tempo from pedido;<br>
-![image](https://user-images.githubusercontent.com/91472785/200927890-fdb489c2-bb4e-48a2-91cc-a1948cb05e21.png)
+![image](https://user-images.githubusercontent.com/91472785/200928079-daff01c3-e1a9-409a-bb46-fdeaa38a2384.png)
 
 
 
