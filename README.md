@@ -199,27 +199,7 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
 
        
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
-        insert into CLIENTE_ENDERECO
-	values ('111.111.111-11', 'Pedro Augusto Pina', 998885430, 'Rua Castelo', 155, 'Jardim Limoeiro'),
-	       ('222.222.222-22', 'Álvares Virgulino',  999532192, 'Rua Rui Barbosa', 23, 'Bairro de Fátima'),
-	       ('333.333.333-33', 'Amanda Pessoa Carlos', 988221445, 'Rua Limoeiro', 26, 'Barcelona'),
-	       ('444.444.444-44', 'Luís Augusto Silva', 992323555, 'Rua do Rosário', 55, 'Nova Almeida'),
-         ('555.555.555-55', 'Paola Jõao Orlando', 992365539, 'Rua Porto Alegre', 122, 'Nova Almeida'),
-         ('666.666.666-66', 'Emanoel Silveira', 998644222, 'Rua Carvalho', 15, 'Barcelona'),
-         ('777.777.777-77', 'Moisés Lima Soares', 990843323, 'Rua Lázaro Verde', 35, 'Jardim Limoeiro'),
-         ('888.888.888-88', 'Sofia Pascal', 987657668, 'Rua Monte Seco', 52, 'Bairro de Fátima'),
-         ('999.999.999-99', 'Pâmela Oliveira Santos', 994523223, 'Rua Pimenta', 165, 'Nova Almeida');
-	
-	insert into RESTAURANTE
-      values ('12.332.646/0002-25', 'McDonalds'),
-             ('16.225.938/0002-17', 'BurgerKing'),
-             ('08.427.254/0002-19', 'Subway');
-	
-	insert into PRODUTO
-	values (01, 'Hambúrguer', 15.00),
-	       (02, 'Pizza', 40.00),
-	       (03, 'Água', 2.00),
-	       insert into PESSOA
+        insert into PESSOA
 	values ('111.111.111-22', 'Paolo Versalhes Nunes'),
 		   ('222.222.222-33', 'David Barcelos'),
            ('333.333.333-44', 'Sônia Vasconcelos Santino'),
@@ -309,7 +289,7 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
            ('08.427.254/0002-19', 06);
 
 	insert into PRODUTO_PEDIDO
-  	values (01, 001),
+ 	 values (01, 001),
          (04, 001),
          (06, 001),
          (02, 002),
@@ -323,6 +303,28 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
          (02, 006),
          (05, 006),
          (06, 006),
+         (05, 007),
+         (01, 008),
+         (03, 008),
+         (05, 008),
+         (02, 009),
+         (02, 009),
+         (05, 009),
+         (05, 009),
+         (02, 010),
+         (02, 010);
+
+	insert into ENTREGADOR_CLIENTE
+ 	 values ('222.222.222-33', '111.111.111-11',001, '2022-09-12 12:20:50'),
+         ('222.222.222-33', '777.777.777-77',002, '2022-09-12 12:50:00'),
+         ('888.888.888-99', '999.999.999-99',003, '2022-10-15 19:36:35'),
+         ('666.666.666-77', '444.444.444-44',004, '2022-08-23 08:12:30'),
+         ('333.333.333-44', '333.333.333-33',005, '2022-08-27 14:44:23'),
+         ('111.111.111-22', '555.555.555-55',006, '2022-10-16 10:14:46'),
+         ('444.444.444-55', '222.222.222-22',007, '2022-10-22 09:12:00'),
+         ('444.444.444-55', '888.888.888-88',008, '2022-10-23 07:16:18'),
+         ('333.333.333-44', '666.666.666-66',009, '2022-09-06 15:03:33'),
+         ('999.999.999-11', '777.777.777-77',010, '2022-07-26 18:06:39');
 	
 	
 	
