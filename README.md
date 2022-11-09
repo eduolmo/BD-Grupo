@@ -25,7 +25,7 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
     
 > A Empresa "AiQueFome!" precisa inicialmente dos seguintes relatórios:
 * Relatório que mostre o nome de cada entregador e a quantidade de entregas feitas por ele.
-* Relatório que apresente o nome do restaurante, a quantidade de produtos vendidos por ele e o valor total desses produtos.
+* Relatório que apresente o nome do restaurante, a quantidade de pedidos realizados por ele e o valor total desses pedidos.
 * Relatório que mostre a quantidade das entregas feitas após certo horário.
 * Relatório que mostre o nome de cada cliente e o valor total dos pedidos que esse cliente pediu.
 * Relatório que mostre o nome do bairro e a quantidade de clientes que residem nele, agrupando pelo bairro.
