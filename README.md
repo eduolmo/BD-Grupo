@@ -73,7 +73,7 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
 
 ### 6	MODELO LÓGICO<br>
         
-![image](https://user-images.githubusercontent.com/91472785/200862593-c2a9967d-60b1-4058-a93d-6822135663a3.png)
+![image](https://user-images.githubusercontent.com/91472785/200866707-7e3f0935-a3d4-4184-b660-243bc2f94119.png)
 
 ### 7	MODELO FÍSICO<br>
         
