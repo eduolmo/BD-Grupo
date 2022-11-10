@@ -624,7 +624,16 @@ where turno in('Matutino','Vespertino');<br>
 ![image](https://user-images.githubusercontent.com/91472785/201218402-4261f0ad-96a1-4dcd-abeb-9cabff345ccc.png)
 
      a) Criar minimo 1 envolvendo GROUP BY
-     
+
+select nome,count(cod_produto)<br>
+from produto<br>
+inner join produto_pedido as pp<br>
+on(produto.cod_produto = pp.fk_produto_cod_produto)<br>
+where nome in('Pizza','Refrigerante')<br>
+group by nome<br>
+order by count(cod_produto) desc;<br>
+![image](https://user-images.githubusercontent.com/91472785/201221449-deb39e3b-421e-4ced-a29b-013546edc28b.png)
+
      
      b) Criar minimo 1 envolvendo algum tipo de junção
      
