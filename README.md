@@ -428,6 +428,8 @@ select *, age(current_date,data_hora) as tempo from pedido;<br>
 select *, date_part('month',age(current_date,data_hora)) as "tempo em meses" from entregador_cliente;<br>
 ![image](https://user-images.githubusercontent.com/91472785/201132561-03c09750-fc66-4650-9a65-4067d2992d3c.png)
 
+select * from entregador_cliente where (extract(day from current_date-data_hora) < 20);<br>
+![image](https://user-images.githubusercontent.com/91472785/201136153-e70381c7-4894-47f6-9b7c-75c9626db516.png)
 
 
 
