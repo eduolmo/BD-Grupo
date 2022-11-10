@@ -471,6 +471,11 @@ order by ce.fk_pessoa_cpf;<br>
 
     b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho
 
+select fk_pessoa_cpf,nome
+from entregador
+inner join pessoa
+on(pessoa.cpf = entregador.fk_pessoa_cpf)
+![image](https://user-images.githubusercontent.com/91472785/201205037-bbe5488a-5007-4585-9e97-c26d37ade3e7.png)
 
 
 
