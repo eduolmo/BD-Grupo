@@ -463,7 +463,7 @@ select * from entregador_cliente where extract(hour from data_hora) < 12;<br>
 #### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
     a) Criar minimo 3 de exclusão
 
-    update Pessoa set nome='Fernanda Fagundes' where cpf='555.555.555-66';
+ update Pessoa set nome='Fernanda Fagundes' where cpf='555.555.555-66';
 select * from Pessoa;<br>
 ![Image](https://user-images.githubusercontent.com/84751064/201203050-bc3a2f9f-ddf7-4914-a1ba-53466bdddc41.png)
 
