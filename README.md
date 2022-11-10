@@ -478,7 +478,7 @@ update CLIENTE_ENDERECO set tipo_logradouro='rua' where Bairro='Barcelona';
 select * from CLIENTE_ENDERECO;<br>
 ![Image](https://user-images.githubusercontent.com/84751064/201204014-3ea98852-72e3-4daa-a1c0-cac241644be5.png)
 
-b) Criar minimo 3 de atualização
+	b) Criar minimo 3 de atualização
 
 DELETE FROM Pessoa where nome like 'A%';
 select * from Pessoa;<br>
