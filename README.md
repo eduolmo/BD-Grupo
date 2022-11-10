@@ -619,6 +619,10 @@ where cliente_endereco.tipo_logradouro = 'Avenida';<br>
 
 #### 9.10	SUBCONSULTAS (Mínimo 4)<br>
 
+select * from entregador<br>
+where turno in('Matutino','Vespertino');<br>
+![image](https://user-images.githubusercontent.com/91472785/201218402-4261f0ad-96a1-4dcd-abeb-9cabff345ccc.png)
+
      a) Criar minimo 1 envolvendo GROUP BY
      
      
