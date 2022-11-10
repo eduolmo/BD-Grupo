@@ -618,8 +618,21 @@ where cliente_endereco.tipo_logradouro = 'Avenida';<br>
         b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
 
 #### 9.10	SUBCONSULTAS (Mínimo 4)<br>
+
      a) Criar minimo 1 envolvendo GROUP BY
+     
+     
      b) Criar minimo 1 envolvendo algum tipo de junção
+     
+select cod_pedido,nome from produto<br>
+inner join produto_pedido as pp<br>
+on(pp.fk_produto_cod_produto = produto.cod_produto)<br>
+inner join pedido<br>
+on(pp.fk_pedido_cod_pedido = pedido.cod_pedido)<br>
+where nome in('Hambúrguer','Batata Frita');<br>
+![image](https://user-images.githubusercontent.com/91472785/201218075-9c362a8f-3e72-4562-9045-c73abcc61eaa.png)
+
+
 
 ># Marco de Entrega 02: Do item 9.2 até o ítem 9.10<br>
 
