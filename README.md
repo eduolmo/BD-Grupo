@@ -485,10 +485,10 @@ inner join pessoa
 on(pessoa.cpf = entregador.fk_pessoa_cpf)
 ![image](https://user-images.githubusercontent.com/91472785/201205037-bbe5488a-5007-4585-9e97-c26d37ade3e7.png)
 
-select fk_pessoa_cpf,nome<br>
-from cliente_endereco as ce<br>
-inner join pessoa<br>
-on(pessoa.cpf = ce.fk_pessoa_cpf)<br>
+select fk_pessoa_cpf,nome
+from cliente_endereco as ce
+inner join pessoa
+on(pessoa.cpf = ce.fk_pessoa_cpf)
 ![image](https://user-images.githubusercontent.com/91472785/201207387-f3799631-59d7-411e-8bec-f30acd921490.png)
 
 
