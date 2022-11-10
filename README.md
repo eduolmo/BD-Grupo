@@ -362,25 +362,29 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
     a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
     
 select *from Produto where preco > 10.00 and preco <30.00 ;<br>
-![image](https://user-images.githubusercontent.com/91472785/200879239-f0659eb7-7034-4e3e-94a1-6dcbd255c0e5.png)
+![image](https://user-images.githubusercontent.com/84751064/201212447-74152e01-98a9-4439-bad8-021581a3a8ec.png)
 
-select *from Entrega where(data_hora <>'2022-07-26 18:06:39'and data_hora='2022-09-12 12:20:50') or fk_ENTREGADOR_cpf<>'444.444.444-55';<br>
-![image](https://user-images.githubusercontent.com/91472785/200879269-508510b9-d4f6-4d34-a19f-7f068162a6c7.png)
+select *from Pedido where(data_hora <>'2022-07-26 18:06:39'and data_hora='2022-09-12 12:20:50') or FK_ENTREGADOR_FK_PESSOA_cpf<>'444.444.444-55';<br>
+![image](https://user-images.githubusercontent.com/84751064/201212925-28f42a2d-4ee4-4994-ab2b-328df1c78df1.png)
 
 select *from Entregador where(turno<>'Noturno'or turno='Matutino') and salario >=1200.00;<br>
-![image](https://user-images.githubusercontent.com/91472785/200879299-4dfbf220-3999-4ed2-aba3-9e1edfc591df.png)
+![image](https://user-images.githubusercontent.com/84751064/201213021-0f973e27-350a-400a-b9c7-afc2eb314931.png)
+
 
 select *from Entregador where(turno<>'Noturno'or turno='Vespertino') and salario >=1300.00;<br>
-![image](https://user-images.githubusercontent.com/91472785/200879338-6798cd18-0a72-4be8-8af9-24b09f282b47.png)
+![image](https://user-images.githubusercontent.com/84751064/201213855-a8a4f9d8-3450-4f57-8acf-80b74262f59d.png)
+
 
 select *from Pedido where preco_total < 20.00 or cod_pedido<>005;<br>
-![image](https://user-images.githubusercontent.com/91472785/200879352-46c7d462-59e0-429e-aac2-402de07fe17c.png)
+![image](https://user-images.githubusercontent.com/84751064/201213742-63eb7526-2607-4563-88f0-1a966060e91e.png)
 
-select *from Cliente_Endereco where (rua<>'Rua Pimenta' or bairro<>'Nova Almeida')and not rua='Rua do Rosário';<br>
-![image](https://user-images.githubusercontent.com/91472785/200879371-5480bd1e-6392-4d19-9e75-b013677924b2.png)
 
-select *from Pedido where not preco_total =50.00 or FK_ENTREGADOR_cpf<>'222.222.222-33';<br>
-![image](https://user-images.githubusercontent.com/91472785/200879390-a37c5335-de13-442c-80a4-8a58ef7fb95e.png)
+select *from Cliente_Endereco where (tipo_logradouro<>'rua' or bairro<>'Nova Almeida')and not nome_logradouro='Rua do Rosário';<br>
+![image](https://user-images.githubusercontent.com/84751064/201213628-9d0fa054-3020-404e-89e5-f77745f85888.png)
+
+select *from Pedido where not preco_total =50.00 or FK_ENTREGADOR_FK_PESSOA_cpf<>'222.222.222-33';<br>
+![image](https://user-images.githubusercontent.com/84751064/201213319-14f913a4-a786-4143-b0fd-d860519bcb34.png)
+
 	
 	b) Criar no mínimo 3 consultas com operadores aritméticos 
     
