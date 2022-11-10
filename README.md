@@ -474,6 +474,8 @@ from cliente_endereco<br>
 inner join pedido<br>
 on (cliente_endereco.fk_pessoa_cpf = pedido.fk_cliente_endereco_fk_pessoa_cpf)<br>
 group by bairro;<br>
+![image](https://user-images.githubusercontent.com/92343021/201136838-ff6591eb-501f-4f70-abc4-abbcf6fd8386.png)
+
 
 #### 9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4)<br>
     a) Criar minimo 1 de cada tipo
