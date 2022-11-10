@@ -430,8 +430,12 @@ select *, date_part('month',age(current_date,data_hora)) as "tempo em meses" fro
 select * from entregador_cliente where (extract(day from current_date-data_hora) < 20);<br>
 ![image](https://user-images.githubusercontent.com/91472785/201136153-e70381c7-4894-47f6-9b7c-75c9626db516.png)
 
-select * from pedido where extract(hour from data_hora) < 11;<br>
-![image](https://user-images.githubusercontent.com/91472785/201137545-3c223a52-0879-4d8a-aba0-d6e58ffd41eb.png)
+select * from pedido where extract(hour from data_hora) < 12;<br>
+![image](https://user-images.githubusercontent.com/91472785/201138431-919ce2d0-1c7a-491b-8dbe-5cedb812dc20.png)
+
+select * from entregador_cliente where extract(hour from data_hora) < 12;<br>
+![image](https://user-images.githubusercontent.com/91472785/201138558-ef723b29-96d0-4803-8306-783daebc4eb5.png)
+
 
 
 #### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
