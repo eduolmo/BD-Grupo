@@ -499,7 +499,13 @@ inner join pessoa
 on(pessoa.cpf = ce.fk_pessoa_cpf)
 ![image](https://user-images.githubusercontent.com/91472785/201207387-f3799631-59d7-411e-8bec-f30acd921490.png)
 
-
+select nome,cod_pedido<br>
+from cliente_endereco as ce<br>
+inner join pessoa<br>
+on(ce.fk_pessoa_cpf = pessoa.cpf)<br>
+inner join pedido<br>
+on(pedido.fk_cliente_endereco_fk_pessoa_cpf = ce.fk_pessoa_cpf)<br>
+![image](https://user-images.githubusercontent.com/91472785/201209371-2d13a2e2-2a4c-4f27-a87b-3db5076a54e5.png)
 
 
 
