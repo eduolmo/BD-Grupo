@@ -444,7 +444,41 @@ select * from entregador_cliente where extract(hour from data_hora) < 12;<br>
 
 #### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6)<br>
     a) Uma junção que envolva todas as tabelas possuindo no mínimo 2 registros no resultado
+
+select cnpj,cod_produto,cod_pedido,e.fk_pessoa_cpf,pessoa.nome,ce.fk_pessoa_cpf,ps.nome<br>
+from restaurante_produto as rp<br>
+inner join restaurante as r<br>
+on(rp.fk_restaurante_cnpj = r.cnpj)<br>
+inner join produto as pr<br>
+on(rp.fk_produto_cod_produto = pr.cod_produto)<br>
+inner join produto_pedido as pp<br>
+on(pr.cod_produto = pp.fk_produto_cod_produto)<br>
+inner join pedido as pe<br>
+on(pe.cod_pedido = pp.fk_pedido_cod_pedido)<br>
+inner join entregador as e<br>
+on(e.fk_pessoa_cpf = pe.fk_entregador_fk_pessoa_cpf)<br>
+inner join pessoa<br>
+on(e.fk_pessoa_cpf = pessoa.cpf)<br>
+inner join entregador_cliente as ec<br>
+on(e.fk_pessoa_cpf = ec.fk_entregador_fk_pessoa_cpf)<br>
+inner join cliente_endereco as ce<br>
+on(ec.fk_cliente_endereco_fk_pessoa_cpf = ce.fk_pessoa_cpf)<br>
+inner join pessoa as ps<br>
+on(ce.fk_pessoa_cpf = ps.cpf)<br>
+order by ce.fk_pessoa_cpf;<br>
+
+
+
+
+
     b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho
+
+
+
+
+
+
+
 
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
     a) Criar minimo 2 envolvendo algum tipo de junção
