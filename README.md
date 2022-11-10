@@ -485,6 +485,14 @@ inner join pessoa
 on(pessoa.cpf = entregador.fk_pessoa_cpf)
 ![image](https://user-images.githubusercontent.com/91472785/201205037-bbe5488a-5007-4585-9e97-c26d37ade3e7.png)
 
+select nome,cod_pedido 
+from entregador
+inner join pessoa 
+on(pessoa.cpf = entregador.fk_pessoa_cpf)
+inner join pedido
+on(entregador.fk_pessoa_cpf = pedido.fk_entregador_fk_pessoa_cpf)
+![image](https://user-images.githubusercontent.com/91472785/201208623-9650b7be-3eb5-4311-b4e0-77c17b6dd112.png)
+
 select fk_pessoa_cpf,nome
 from cliente_endereco as ce
 inner join pessoa
