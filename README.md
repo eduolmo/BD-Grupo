@@ -480,6 +480,15 @@ on (cliente_endereco.fk_pessoa_cpf = pedido.fk_cliente_endereco_fk_pessoa_cpf)<b
 group by bairro;<br>
 ![image](https://user-images.githubusercontent.com/92343021/201136838-ff6591eb-501f-4f70-abc4-abbcf6fd8386.png)
 
+select pessoa.nome, pessoa.cpf, entregador.salario, entregador_cliente.data_hora<br>
+from entregador<br>
+inner join pessoa<br>
+on (pessoa.cpf = entregador.fk_pessoa_cpf)<br>
+inner join entregador_cliente<br>
+on (pessoa.cpf = entregador_cliente.fk_entregador_fk_pessoa_cpf)<br>
+where entregador.turno = 'Matutino';<br>
+![image](https://user-images.githubusercontent.com/92343021/201140569-b4f80f12-0371-44d8-8f7a-6f66a56cd615.png)
+
 
 #### 9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4)<br>
     a) Criar minimo 1 de cada tipo
