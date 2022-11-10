@@ -412,7 +412,6 @@ select * from restaurante where nome like '%u%';<br>
 
 select * from pessoa where nome like 'P%' or nome like 'A%';<br>
 ![image](https://user-images.githubusercontent.com/91472785/200926521-58335f8f-0404-491a-971a-8fe23e79fe30.png)
-
     
     b) Criar uma consulta para cada tipo de função data apresentada.
 
@@ -431,7 +430,8 @@ select *, date_part('month',age(current_date,data_hora)) as "tempo em meses" fro
 select * from entregador_cliente where (extract(day from current_date-data_hora) < 20);<br>
 ![image](https://user-images.githubusercontent.com/91472785/201136153-e70381c7-4894-47f6-9b7c-75c9626db516.png)
 
-
+select * from pedido where extract(hour from data_hora) < 11;<br>
+![image](https://user-images.githubusercontent.com/91472785/201137545-3c223a52-0879-4d8a-aba0-d6e58ffd41eb.png)
 
 
 #### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
