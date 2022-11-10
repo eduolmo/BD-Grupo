@@ -470,7 +470,7 @@ order by ce.fk_pessoa_cpf;<br>
 ![Imagem do WhatsApp de 2022-11-10 à(s) 17 49 30](https://user-images.githubusercontent.com/91472785/201203268-1bcd9a0f-1a7e-4288-8f8f-70c084d3260d.jpg)
 
     b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho
-select r.nome as restaurante,p.nome as produto<br>
+select r.nome as restaurante,p.nome as produto
 from restaurante as r<br>
 inner join restaurante_produto as rp
 on(rp.fk_restaurante_cnpj = r.cnpj)<br>
