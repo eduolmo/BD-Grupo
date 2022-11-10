@@ -425,6 +425,10 @@ select *, now() - data_hora as tempo from entregador_cliente;<br>
 select *, age(current_date,data_hora) as tempo from pedido;<br>
 ![image](https://user-images.githubusercontent.com/91472785/200935054-33f136ac-39b2-41ad-9c17-5c93f8a29f3e.png)
 
+select *, date_part('month',age(current_date,data_hora)) as "tempo em meses" from entregador_cliente;<br>
+![image](https://user-images.githubusercontent.com/91472785/201132561-03c09750-fc66-4650-9a65-4067d2992d3c.png)
+
+
 
 
 
