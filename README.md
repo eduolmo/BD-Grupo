@@ -623,6 +623,11 @@ select * from entregador
 where turno in('Matutino','Vespertino');<br>
 ![image](https://user-images.githubusercontent.com/91472785/201218402-4261f0ad-96a1-4dcd-abeb-9cabff345ccc.png)
 
+select * 
+from cliente_endereco
+where bairro not in('Nova Almeida','Barcelona');<br>
+![image](https://user-images.githubusercontent.com/91472785/201224118-579b2319-1cd1-4b5e-a9a8-86db94cd018d.png)
+
      a) Criar minimo 1 envolvendo GROUP BY
 
 select nome,count(cod_produto)<br>
