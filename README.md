@@ -462,7 +462,35 @@ select * from entregador_cliente where extract(hour from data_hora) < 12;<br>
 
 #### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
     a) Criar minimo 3 de exclusão
-    b) Criar minimo 3 de atualização
+
+    update Pessoa set nome='Fernanda Fagundes' where cpf='555.555.555-66';
+select * from Pessoa;<br>
+![Image](https://user-images.githubusercontent.com/84751064/201203050-bc3a2f9f-ddf7-4914-a1ba-53466bdddc41.png)
+
+
+
+update Produto set nome='Tortilhas' where cod_produto='06';
+select * from Produto;<br>
+![Image](https://user-images.githubusercontent.com/84751064/201203269-fd2efef7-899b-4528-8345-19e1214b0f55.png)
+
+
+update CLIENTE_ENDERECO set tipo_logradouro='rua' where Bairro='Barcelona';
+select * from CLIENTE_ENDERECO;<br>
+![Image](https://user-images.githubusercontent.com/84751064/201204014-3ea98852-72e3-4daa-a1c0-cac241644be5.png)
+
+b) Criar minimo 3 de atualização
+
+DELETE FROM Pessoa where nome like 'A%';
+select * from Pessoa;<br>
+![Image](https://user-images.githubusercontent.com/84751064/201204948-e87fde17-059f-4d35-8d92-45bc9f74a381.png)
+
+DELETE FROM Entregador_cliente where data_hora='2022-09-12 12:50:00' ;
+select * from Entregador_Cliente<br>
+![Image](https://user-images.githubusercontent.com/84751064/201205878-bc353822-ee90-4dc0-9d5a-8e170eec461f.png)
+
+DELETE FROM Cliente_Endereco where  tipo_logradouro='Avenida' or bairro like 'N%' ;
+select * from Cliente_Endereco<br>
+![Image](https://user-images.githubusercontent.com/84751064/201206732-8c7f5a51-1ab0-4eeb-8706-aea57dea7f53.png)
 
 #### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6)<br>
     a) Uma junção que envolva todas as tabelas possuindo no mínimo 2 registros no resultado
