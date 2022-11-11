@@ -621,6 +621,18 @@ on(pessoa.cpf = entregador.fk_pessoa_cpf);<br>
 
 ![image](https://user-images.githubusercontent.com/92343021/201433815-97a7903f-ac34-4d0d-95b5-762a81bfcc8f.png)
 
+select pessoa.cpf,<br>
+pessoa.nome,<br>
+cliente_endereco.telefone,<br>
+cliente_endereco.tipo_logradouro,<br>
+cliente_endereco.nome_logradouro,<br>
+cliente_endereco.numero,<br>
+cliente_endereco.bairro<br>
+from pessoa<br>
+left outer join cliente_endereco<br>
+on(cliente_endereco.fk_pessoa_cpf = pessoa.cpf);<br>
+![image](https://user-images.githubusercontent.com/92343021/201435741-7daa119c-9e31-4765-a10d-5a3de4306f64.png)
+
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
         a) Uma junção que envolva Self Join (caso não ocorra na base justificar e substituir por uma view)
         b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
