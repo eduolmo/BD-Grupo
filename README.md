@@ -637,11 +637,9 @@ on(cliente_endereco.fk_pessoa_cpf = pessoa.cpf);<br>
 select * <br> 
 from entregador<br> 
 full outer join entregador_cliente<br> 
-on(entregador.fk_pessoa_cpf = entregador_cliente.fk_entregador_fk_pessoa_cpf)<br> 
-full outer join cliente_endereco<br> 
-on(cliente_endereco.fk_pessoa_cpf = entregador_cliente.fk_cliente_endereco_fk_pessoa_cpf)<br> 
+on(entregador.fk_pessoa_cpf = entregador_cliente.fk_entregador_fk_pessoa_cpf);<br> 
 
-![image](https://user-images.githubusercontent.com/92343021/201437813-3e04de4e-cbad-4b0a-8308-2ba7125c8947.png)
+![image](https://user-images.githubusercontent.com/92343021/201439000-a538a7f1-468f-4358-9238-499562796d17.png)
 
 select pessoa.cpf,<br> 
 pessoa.nome,<br> 
