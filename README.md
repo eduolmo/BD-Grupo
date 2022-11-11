@@ -599,13 +599,15 @@ from entregador<br>
 group by turno;<br>
 ![image](https://user-images.githubusercontent.com/92343021/201431035-876589a2-980d-42f4-a785-f2285a6f15d1.png)
 
-select pessoa.nome, pessoa.cpf, cliente_endereco.telefone<br>
-from pessoa<br>
-inner join cliente_endereco<br>
-on (pessoa.cpf = cliente_endereco.fk_pessoa_cpf)<br>
-where cliente_endereco.tipo_logradouro = 'Avenida';<br>
+select produto_pedido.fk_pedido_cod_pedido,<br> 
+count(produto.cod_produto) as qtd_produtos<br>
+from produto_pedido<br>
+inner join produto<br>
+on (produto.cod_produto = produto_pedido.fk_produto_cod_produto)<br>
+group by produto_pedido.fk_pedido_cod_pedido<br>
+order by produto_pedido.fk_pedido_cod_pedido;<br>
 
-![image](https://user-images.githubusercontent.com/92343021/201143507-9f7aac92-0b31-4068-9da1-ef572efa2976.png)
+![image](https://user-images.githubusercontent.com/92343021/201432265-03a93b4d-851f-44bb-90bf-903de2cf23b3.png)
 
 #### 9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4)<br>
     a) Criar minimo 1 de cada tipo
