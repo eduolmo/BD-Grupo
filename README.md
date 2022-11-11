@@ -619,7 +619,7 @@ from entregador<br>
 right outer join pessoa<br>
 on(pessoa.cpf = entregador.fk_pessoa_cpf);<br>	
 
-![image](https://user-images.githubusercontent.com/92343021/201433815-97a7903f-ac34-4d0d-95b5-762a81bfcc8f.png)
+![image](https://user-images.githubusercontent.com/92343021/201438227-d7a56bc4-206c-4a6d-a896-a425712469cd.png)
 
 select pessoa.cpf,<br>
 pessoa.nome,<br> 
