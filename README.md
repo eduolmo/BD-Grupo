@@ -611,13 +611,13 @@ order by produto_pedido.fk_pedido_cod_pedido;<br>
 
 #### 9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4)<br>
     a) Criar minimo 1 de cada tipo
-select pessoa.cpf,<br> 
+select pessoa.cpf,<br>
 pessoa.nome,<br>
 entregador.salario,<br>
 entregador.turno<br>
-from pessoa<br> 
-left outer join entregador<br>
-on(pessoa.cpf = entregador.fk_pessoa_cpf);<br>
+from entregador<br>
+right outer join pessoa<br>
+on(pessoa.cpf = entregador.fk_pessoa_cpf);<br>	
 
 ![image](https://user-images.githubusercontent.com/92343021/201433815-97a7903f-ac34-4d0d-95b5-762a81bfcc8f.png)
 
