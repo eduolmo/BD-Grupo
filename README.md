@@ -597,7 +597,7 @@ count(entregador.fk_pessoa_cpf) as qtd_entregadores,<br>
 sum(entregador.salario) as soma_salario<br>
 from entregador<br>
 group by turno;<br>
-![image](https://user-images.githubusercontent.com/92343021/201140569-b4f80f12-0371-44d8-8f7a-6f66a56cd615.png)
+![image](https://user-images.githubusercontent.com/92343021/201431035-876589a2-980d-42f4-a785-f2285a6f15d1.png)
 
 select pessoa.nome, pessoa.cpf, cliente_endereco.telefone<br>
 from pessoa<br>
