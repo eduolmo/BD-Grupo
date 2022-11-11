@@ -590,7 +590,7 @@ select cliente_endereco.bairro,<br>
 count(cliente_endereco.fk_pessoa_cpf) as qtd_clientes<br>
 from cliente_endereco<br>
 group by bairro;<br>
-![image](https://user-images.githubusercontent.com/92343021/201136838-ff6591eb-501f-4f70-abc4-abbcf6fd8386.png)
+![image](https://user-images.githubusercontent.com/92343021/201430392-235e0aba-c3d8-42e8-a6fd-f8b2b260fcc6.png)
 
 select pessoa.nome, pessoa.cpf, entregador.salario, entregador_cliente.data_hora<br>
 from entregador<br>
