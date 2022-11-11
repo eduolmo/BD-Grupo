@@ -586,10 +586,9 @@ on (cliente_endereco.fk_pessoa_cpf = pedido.fk_cliente_endereco_fk_pessoa_cpf)<b
 group by pessoa.nome;<br>
 ![image](https://user-images.githubusercontent.com/92343021/200936150-4f848acb-3bfe-4d56-9764-06f8fca3bc79.png)
 
-select cliente_endereco.bairro, sum(pedido.preco_total) as valor_total,<br> count(pedido.fk_cliente_endereco_fk_pessoa_cpf) as qtd_moradores<br>
+select cliente_endereco.bairro,<br>
+count(cliente_endereco.fk_pessoa_cpf) as qtd_clientes<br>
 from cliente_endereco<br>
-inner join pedido<br>
-on (cliente_endereco.fk_pessoa_cpf = pedido.fk_cliente_endereco_fk_pessoa_cpf)<br>
 group by bairro;<br>
 ![image](https://user-images.githubusercontent.com/92343021/201136838-ff6591eb-501f-4f70-abc4-abbcf6fd8386.png)
 
