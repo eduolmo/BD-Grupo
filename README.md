@@ -592,13 +592,11 @@ from cliente_endereco<br>
 group by bairro;<br>
 ![image](https://user-images.githubusercontent.com/92343021/201430392-235e0aba-c3d8-42e8-a6fd-f8b2b260fcc6.png)
 
-select pessoa.nome, pessoa.cpf, entregador.salario, entregador_cliente.data_hora<br>
+select entregador.turno,<br>
+count(entregador.fk_pessoa_cpf) as qtd_entregadores,<br> 
+sum(entregador.salario) as soma_salario<br>
 from entregador<br>
-inner join pessoa<br>
-on (pessoa.cpf = entregador.fk_pessoa_cpf)<br>
-inner join entregador_cliente<br>
-on (pessoa.cpf = entregador_cliente.fk_entregador_fk_pessoa_cpf)<br>
-where entregador.turno = 'Matutino';<br>
+group by turno;<br>
 ![image](https://user-images.githubusercontent.com/92343021/201140569-b4f80f12-0371-44d8-8f7a-6f66a56cd615.png)
 
 select pessoa.nome, pessoa.cpf, cliente_endereco.telefone<br>
