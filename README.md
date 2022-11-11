@@ -634,14 +634,31 @@ on(cliente_endereco.fk_pessoa_cpf = pessoa.cpf);<br>
 
 ![image](https://user-images.githubusercontent.com/92343021/201435741-7daa119c-9e31-4765-a10d-5a3de4306f64.png)
 
-select *
-from entregador
-full outer join entregador_cliente
-on(entregador.fk_pessoa_cpf = entregador_cliente.fk_entregador_fk_pessoa_cpf)
-full outer join cliente_endereco
-on(cliente_endereco.fk_pessoa_cpf = entregador_cliente.fk_cliente_endereco_fk_pessoa_cpf)
+select * <br> 
+from entregador<br> 
+full outer join entregador_cliente<br> 
+on(entregador.fk_pessoa_cpf = entregador_cliente.fk_entregador_fk_pessoa_cpf)<br> 
+full outer join cliente_endereco<br> 
+on(cliente_endereco.fk_pessoa_cpf = entregador_cliente.fk_cliente_endereco_fk_pessoa_cpf)<br> 
 
 ![image](https://user-images.githubusercontent.com/92343021/201437813-3e04de4e-cbad-4b0a-8308-2ba7125c8947.png)
+
+select pessoa.cpf,<br> 
+pessoa.nome,<br> 
+entregador.salario,<br> 
+entregador.turno,<br> 
+cliente_endereco.telefone,<br> 
+cliente_endereco.tipo_logradouro,<br> 
+cliente_endereco.nome_logradouro,<br> 
+cliente_endereco.numero,<br> 
+cliente_endereco.tipo_logradouro<br> 
+from entregador<br> 
+right outer join pessoa<br> 
+on(pessoa.cpf = entregador.fk_pessoa_cpf)<br> 
+left outer join cliente_endereco<br> 
+on(cliente_endereco.fk_pessoa_cpf = pessoa.cpf);<br> 
+
+![image](https://user-images.githubusercontent.com/92343021/201438723-45419f1a-cfc6-47dd-8006-b989d8b43bd3.png)
 
 
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
