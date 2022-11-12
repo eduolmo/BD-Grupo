@@ -684,12 +684,12 @@ on(cliente_endereco.fk_pessoa_cpf = pessoa.cpf);<br>
         a) Uma junção que envolva Self Join (caso não ocorra na base justificar e substituir por uma view)
 As tabelas não possuem informações suficientes para que seja feito um auto relacionamento. Não existem atributos relacionáveis dentro de uma mesma tabela no nosso banco de dados.
 
-create view contato_cliente as
-select pessoa.cpf,pessoa.nome, 
-cliente_endereco.telefone
-from pessoa
-inner join cliente_endereco
-on(pessoa.cpf = cliente_endereco.fk_pessoa_cpf)
+create view contato_cliente as<br>
+select pessoa.cpf,pessoa.nome,<br>
+cliente_endereco.telefone<br>
+from pessoa<br>
+inner join cliente_endereco<br>
+on(pessoa.cpf = cliente_endereco.fk_pessoa_cpf)<br>
 
 ![image](https://user-images.githubusercontent.com/92343021/201488097-9e5bf2bc-b9af-4722-bab2-a2571edd280b.png)
 
