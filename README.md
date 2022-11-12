@@ -407,15 +407,23 @@ select *from Pedido where not preco_total =50.00 or FK_ENTREGADOR_FK_PESSOA_cpf<
 	b) Criar no mínimo 3 consultas com operadores aritméticos 
     
 PRIMEIRO:
-select * from COMPOE where fk_PRODUTO_cod_produto > 2*2;<br>
-![image](https://user-images.githubusercontent.com/103542882/200878717-cfa2fa85-37b0-46cd-b8b3-8b3c3bc36f8f.png)
+select * from ENTREGADOR_CLIENTE where FK_PEDIDO_cod_pedido > 2*2;
+![image](https://user-images.githubusercontent.com/103542882/201452008-f57b2d8e-d764-43e8-96e6-8f0a435ef2bc.png)
 
 SEGUNDO:
 select * from PEDIDO where preco_total*50/100 > 2^4;<br>
-![image](https://user-images.githubusercontent.com/103542882/200879460-a74e0f2b-095a-4766-abc1-5169b7479128.png)
+![image](https://user-images.githubusercontent.com/103542882/201452074-064467b3-5dc5-43eb-a303-f5c066b62059.png)
+
+TERCEIRO:
+select * from PRODUTO_PEDIDO where fk_PRODUTO_cod_produto > 3 and fk_PEDIDO_cod_pedido < 6;
+![image](https://user-images.githubusercontent.com/103542882/201452309-07f18d16-8890-4411-8d9a-eec2b47f794f.png)
+
 
 	c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
-    
+PRIMEIRO:
+select fk_PRODUTO_cod_produto as Codigo_Produto, fk_PEDIDO_cod_pedido as Codigo_Pedido from PRODUTO_PEDIDO where fk_PRODUTO_cod_produto > 3 and fk_PEDIDO_cod_pedido < 6;
+![image](https://user-images.githubusercontent.com/103542882/201452616-37440493-7247-4784-b109-e3033edc81dc.png)
+
 
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
     a) Criar outras 5 consultas que envolvam like ou ilike
