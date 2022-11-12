@@ -693,7 +693,7 @@ on(pessoa.cpf = cliente_endereco.fk_pessoa_cpf)<br>
 
 ![image](https://user-images.githubusercontent.com/92343021/201488097-9e5bf2bc-b9af-4722-bab2-a2571edd280b.png)
 
-        b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
+	b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
 
 create view salario_anual_entregador as<br>
 select pessoa.cpf,pessoa.nome,<br> 
