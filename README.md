@@ -729,6 +729,19 @@ group by pessoa.cpf, pessoa.nome;<br>
 
 ![image](https://user-images.githubusercontent.com/92343021/201489103-a74a1d46-77df-48fe-b781-e5d1927d8c2d.png)
 
+create view restaurante_produto_vendas as<br>
+select restaurante.cnpj as restaurante_cnpj,<br>
+restaurante.nome as restaurante_nome,<br>
+sum(pedido.preco_total) as valor_total_vendas,<br> 
+count(produto_pedido.fk_produto_cod_produto) as qtd_produtos<br>
+from pedido<br>
+inner join restaurante<br>
+on(pedido.fk_restaurante_cnpj = restaurante.cnpj)<br>
+inner join produto_pedido<br>
+on(produto_pedido.fk_pedido_cod_pedido = pedido.cod_pedido)<br>
+group by restaurante.cnpj;<br>
+
+![image](https://user-images.githubusercontent.com/92343021/201489629-644bcbe0-f5af-44a9-8701-4c1c394cd996.png)
 
 #### 9.10	SUBCONSULTAS (Mínimo 4)<br>
 
