@@ -720,6 +720,15 @@ on(pessoa.cpf = cliente_endereco.fk_pessoa_cpf)<br>
 
 ![image](https://user-images.githubusercontent.com/92343021/201488622-6e2a01b0-29cf-450f-a068-1b8b7ac74763.png)
 
+create view cliente_pagamento_pedido as<br>
+select pessoa.cpf, pessoa.nome, sum(pedido.preco_total) as pagamento_total<br>
+from pedido<br>
+inner join pessoa<br>
+on(pedido.fk_cliente_endereco_fk_pessoa_cpf = pessoa.cpf)<br>
+group by pessoa.cpf, pessoa.nome;<br>
+
+![image](https://user-images.githubusercontent.com/92343021/201489103-a74a1d46-77df-48fe-b781-e5d1927d8c2d.png)
+
 
 #### 9.10	SUBCONSULTAS (Mínimo 4)<br>
 
