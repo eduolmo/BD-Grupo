@@ -681,7 +681,7 @@ on(cliente_endereco.fk_pessoa_cpf = pessoa.cpf);<br>
 
 
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
-        a) Uma junção que envolva Self Join (caso não ocorra na base justificar e substituir por uma view)
+	a) Uma junção que envolva Self Join (caso não ocorra na base justificar e substituir por uma view)
 As tabelas não possuem informações suficientes para que seja feito um auto relacionamento. Não existem atributos relacionáveis dentro de uma mesma tabela no nosso banco de dados.
 
 create view contato_cliente as<br>
