@@ -704,6 +704,21 @@ on(pessoa.cpf = entregador.fk_pessoa_cpf);<br>
 
 ![image](https://user-images.githubusercontent.com/92343021/201488477-3876ddef-08a0-4f80-bfd6-afea1b71cfec.png)
 
+create view cpf_e_nome_entregador as<br>
+select pessoa.cpf,pessoa.nome<br>
+from pessoa<br>
+inner join entregador<br>
+on(pessoa.cpf = entregador.fk_pessoa_cpf);<br>
+
+![image](https://user-images.githubusercontent.com/92343021/201488574-fd2284fd-33e3-4a97-bb88-ecd3a020a809.png)
+
+create view cpf_e_nome_cliente as<br>
+select pessoa.cpf,pessoa.nome<br>
+from pessoa<br>
+inner join cliente_endereco<br>
+on(pessoa.cpf = cliente_endereco.fk_pessoa_cpf)<br>
+
+![image](https://user-images.githubusercontent.com/92343021/201488622-6e2a01b0-29cf-450f-a068-1b8b7ac74763.png)
 
 
 #### 9.10	SUBCONSULTAS (Mínimo 4)<br>
