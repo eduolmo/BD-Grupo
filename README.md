@@ -422,14 +422,17 @@ select * from PRODUTO_PEDIDO where fk_PRODUTO_cod_produto > 3 and fk_PEDIDO_cod_
 	c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
 PRIMEIRO:
 select fk_PRODUTO_cod_produto as Codigo_Produto, fk_PEDIDO_cod_pedido as Codigo_Pedido from PRODUTO_PEDIDO where fk_PRODUTO_cod_produto > 3 and fk_PEDIDO_cod_pedido < 6;
+
 ![image](https://user-images.githubusercontent.com/103542882/201452616-37440493-7247-4784-b109-e3033edc81dc.png)
 
 SEGUNDO:
 select fk_ENTREGADOR_FK_PESSOA_cpf as cpf_entregador, FK_PEDIDO_cod_pedido as cod_pedido from ENTREGADOR_CLIENTE where FK_PEDIDO_cod_pedido > 5; 
+
 ![image](https://user-images.githubusercontent.com/103542882/201454217-ba6532bc-aa72-4f1a-804f-013901f5a4c6.png)
 
 TERCEIRO:
 select cod_pedido,FK_RESTAURANTE_cnpj as cnpj_Restaurante,FK_ENTREGADOR_FK_PESSOA_cpf as cpf_entregador,FK_CLIENTE_ENDERECO_FK_PESSOA_cpf as cpf_Cliente from PEDIDO where cod_pedido > 5;
+
 ![image](https://user-images.githubusercontent.com/103542882/201454390-ffbe526a-77e5-463a-bcb1-6cb7d42962cd.png)
 
 
