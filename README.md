@@ -695,6 +695,17 @@ on(pessoa.cpf = cliente_endereco.fk_pessoa_cpf)<br>
 
         b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
 
+create view salario_anual_entregador as<br>
+select pessoa.cpf,pessoa.nome,<br> 
+(entregador.salario * 12) as salario_anual<br>
+from pessoa<br>
+inner join entregador<br>
+on(pessoa.cpf = entregador.fk_pessoa_cpf);<br>
+
+![image](https://user-images.githubusercontent.com/92343021/201488477-3876ddef-08a0-4f80-bfd6-afea1b71cfec.png)
+
+
+
 #### 9.10	SUBCONSULTAS (Mínimo 4)<br>
 
 select * from entregador
