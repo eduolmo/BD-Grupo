@@ -261,7 +261,7 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
 		   ('18.894.492/0002-39','Baskin-Robbins'),
 		   ('91.794.386/0002-90','Dairy Queen'),
 		   ('90.846.365/0002-17','Papa Johns'),
-		   ('21.494.780/0001-86','Club Fit'),
+		   ('21.494.780/0001-86','Club Fit Life'),
 		   ('57.282.078/0001-43','Cloud Foods');
 		   		 
 	insert into PRODUTO
