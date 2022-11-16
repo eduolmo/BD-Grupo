@@ -243,18 +243,34 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
 		   ('999.999.999-99', 994523223, 'Avenida', 'Pimenta', 165, 'Nova Almeida');
 
 	insert into RESTAURANTE
-	values ('12.332.646/0002-25', 'McDonalds'),
-           ('16.225.938/0002-17', 'BurgerKing'),
-           ('08.427.254/0002-19', 'Subway');
-
+	values ('12.332.646/0002-25','McDonalds'),
+	       ('16.225.938/0002-17','Burger King'),
+	       ('08.427.254/0002-19','Subway'),
+		   ('03.231.435/0002-11','Ricks Burguer'),
+		   ('44.123.443/0002-01','Spoleto'),
+		   ('23.124.554/0002-08','Giraffas'),
+		   ('11.214.235/0002-99','Bobs'),
+		   ('32.411.333/0002-02','China in Box'),
+		   ('41.345.457/0002-34','Coco Bambu'),
+		   ('51.742.899/0002-09','Habibs'),
+		   ('66.346.234/0001-03','Outback Steakhouse'),
+		   ('87.332.111/0002-32','Taco Bell'),
+		   ('10.120.102/0001-45','Pizza Hut'),
+		   ('55.462.725/0002-79','KFC'),
+		   ('79.402.967/0002-53','Starbucks'),
+		   ('18.894.492/0002-39','Baskin-Robbins'),
+		   ('91.794.386/0002-90','Dairy Queen'),
+		   ('90.846.365/0002-17','Papa Johns'),
+		   ('21.494.780/0001-86','Club Fit'),
+		   ('57.282.078/0001-43','Cloud Foods');
+		   		 
 	insert into PRODUTO
 	values (01, 'Hambúrguer', 15.00),
    	       (02, 'Pizza', 40.00),
            (03, 'Água', 2.00),
            (04, 'Suco', 5.00),
            (05, 'Refrigerante', 10.00),
-           (06, 'Batata Frita', 8.50);
-		   
+           (06, 'Batata Frita', 8.50);		   
  
 	insert into PEDIDO
 	values (001, '12.332.646/0002-25', 28.50, '222.222.222-33', '111.111.111-11', '2022-09-12 11:25:22'),
