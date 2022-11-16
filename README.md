@@ -251,7 +251,7 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
 		   ('23.124.554/0002-08','Giraffas'),
 		   ('11.214.235/0002-99','Bobs'),
 		   ('32.411.333/0002-02','China in Box'),
-		   ('41.345.457/0002-34','Coco Bambu'),
+		   ('41.345.457/0002-34','Pedrinni Frutos do Mar'),
 		   ('51.742.899/0002-09','Habibs'),
 		   ('66.346.234/0001-03','Outback Steakhouse'),
 		   ('87.332.111/0002-32','Taco Bell'),
