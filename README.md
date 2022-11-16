@@ -284,7 +284,7 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
 		   (17,'Sopa',20.00),
 		   (18,'Refrigerante sem açúcar',8.50),
 		   (19,'Balde de Frango',35.00),
-		   (20,'Sanduíche',15.00);	 
+		   (20,'Taco',15.00);	 
  
 	insert into PEDIDO
 	values (001, '12.332.646/0002-25', 28.50, '222.222.222-33', '111.111.111-11', '2022-09-12 11:25:22'),
