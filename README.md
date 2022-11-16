@@ -265,12 +265,26 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
 		   ('57.282.078/0001-43','Cloud Foods');
 		   		 
 	insert into PRODUTO
-	values (01, 'Hambúrguer', 15.00),
-   	       (02, 'Pizza', 40.00),
-           (03, 'Água', 2.00),
-           (04, 'Suco', 5.00),
-           (05, 'Refrigerante', 10.00),
-           (06, 'Batata Frita', 8.50);		   
+	values (01,'Hambúrguer', 15.00),
+   	       (02,'Pizza', 40.00),
+		   (03,'Água', 2.00),
+		   (04,'Suco', 5.00),
+		   (05,'Refrigerante', 10.00),
+		   (06,'Batata Frita', 8.50),
+		   (07,'Sushi',),
+		   (08,'Macarrão'),
+		   (09,'Frutos do Mar'),
+		   (10,'Sorvete'),
+		   (11,'Açaí'),
+		   (12,'Milkshake'),
+		   (13,'Esfirra'),
+		   (14,'Dumpling'),
+		   (15,'Bolo'),
+		   (16,'Chá'),
+		   (17,''),
+		   (18,''),
+		   (19,''),
+		   (20,'');	   
  
 	insert into PEDIDO
 	values (001, '12.332.646/0002-25', 28.50, '222.222.222-33', '111.111.111-11', '2022-09-12 11:25:22'),
