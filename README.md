@@ -199,7 +199,7 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
 
        
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
-        insert into PESSOA
+	insert into PESSOA
 	values ('111.111.111-22', 'Paolo Versalhes Nunes'),
 		   ('222.222.222-33', 'David Barcelos'),
 		   ('333.333.333-44', 'Sônia Vasconcelos Santino'),
@@ -217,7 +217,31 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
 		   ('666.666.666-66', 'Emanoel Silveira'),
 		   ('777.777.777-77', 'Moisés Lima Soares'),
 		   ('888.888.888-88', 'Sofia Pascal'),
-		   ('999.999.999-99', 'Pâmela Oliveira Santos');
+		   ('999.999.999-99', 'Pâmela Oliveira Santos'),
+		   ('121.212.121-21','Romeu Silva Rodrigues'),
+		   ('131.313.131-31','Joana Augusta Santana'),
+		   ('141.414.141-41','Eduardo Olmo Santana'),
+		   ('151.515.151-51','Paulo Cezar Rocha Furtado'),
+		   ('161.616.161-61','Ilanna dos Reis Cardoso'),
+		   ('171.717.171-71','Mariana Lopes de Gouvêa'),
+		   ('181.818.181-81','Bruna Ramos Rocha'),
+		   ('191.919.191-91','Daianny Maria Oliveira da Silva'),
+		   ('232.323.232-32','Camila Fraga Egydio'),
+		   ('242.424.242-42','Nycolly do Nascimento Mendes'),
+		   ('252.525.252-52','Elisa Andrade de Jesus'),
+		   ('262.626.262-62','Isabelly Balestrassi Nunes de Andrades'),
+		   ('272.727.272-72','Kauã Mateus de Barros Terra'),
+		   ('282.828.282-82','Davi Nunes Ribeiro'),
+		   ('292.929.292-92','Lorena Toraes dos Santos'),
+		   ('343.434.343-43','João Vitor Oliveira Scheidegger'),
+		   ('353.535.353-53','Esther Moraes Nascimento'),
+		   ('363.636.363-63','Raynan Araujo da Silva'),
+		   ('373.737.373-73','Yasmin Santana Rodrigues'),
+		   ('383.838.383-83','Sofia Andrade Nascimento'),
+		   ('393.939.393-93','Jorge Pereira Alves'),
+		   ('454.545.454-54','Arthur Dias Silveira'),
+		   ('464.646.464-64','Guilherme Ferreira Mendes'),
+		   ('474.747.474-74','Amanda Carvalho Castro');
 
 
 	insert into ENTREGADOR
