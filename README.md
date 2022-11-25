@@ -34,41 +34,44 @@ Elisa Andrade de Jesus:moon.anonimos.es@gmail.com<br>
 ![image](https://user-images.githubusercontent.com/91472785/204053853-e1f73c7d-0ef8-4fe2-991d-9927ee62aac4.png)
     
 #### 5.1 Validação do Modelo Conceitual
-    Grupo 1: Ilanna,Mariana,Bruna,Daianny
+	Grupo 1: Ilanna,Mariana,Bruna,Daianny
     
 
 #### 5.2 Descrição dos dados 
 
-    RESTAURANTE: Tabela que armazena os dados de cada restaurante. 
-    Atributos: CNPJ(identificador) e nome.
-    
-    PRODUTO: Tabela que armazena as informações dos produtos.
-    Atributos: código do produto(identificador), nome e preço.
-    
-    PEDIDO: Tabela que armazena as informações referentes dos pedidos.
-    Atributos: código do pedido(identificador), data e hora e preço total.
-    
-    ENTREGADOR: Tabela que armazena os dados do entregador.
-    Atributos: CPF(identificador), nome, salário, e turno.
-    
-    CLIENTE: Tabela que armazena os dados dos clientes.
-    Atributos: CPF(identificador), nome e telefone.
-    
-    ENDERECO: Tabela que armazena o endereço dos clientes.
-    Atributos: número, tipo logradouro, nome logradouro e bairro.
-    
-    RESTAURANTE/PRODUTO(Produz): Um restaurante pode produzir um ou vários produtos, enquanto um produto pode ser produzido por um ou vários restaurantes.
-    
-    PRODUTO/PEDIDO(Compoe): Um produto pode compor um ou vários pedidos, assim como um pedido pode ser composto por um ou vários produtos. 
-    
-    PEDIDO/CLIENTE(Feito): Um cliente pode fazer um ou vários pedidos, mas um pedido só pode ser feito por apenas um único cliente.
-    
-    PEDIDO/ENTREGADOR(Retira): Um entregador pode retirar um ou vários pedidos, porém um pedido só pode ser retirado por apenas um entregador. 
-    
-    ENTREGADOR/CLIENTE(Entrega): Um entregador pode entregar para nenhum ou vários clientes, e um cliente pode receber de um ou vários entregadores. Esse relacionamento possui o atributo data e hora.
-    
-    CLIENTE/ENDERECO(Possui): Um cliente possui apenas um endereço, e um endereço só pode estar relacionado a apenas um cliente.
-    
+	RESTAURANTE: Tabela que armazena os dados de cada restaurante. 
+	Atributos: CNPJ(identificador) e nome.
+
+	PRODUTO: Tabela que armazena as informações dos produtos.
+	Atributos: código do produto(identificador), nome e preço.
+
+	PEDIDO: Tabela que armazena as informações referentes dos pedidos.
+	Atributos: código do pedido(identificador), cnpj do restaurante, data e hora e preço total.
+
+	PESSOA: Tabela que armazena os dados das pessoas(entregadores e clientes).
+	Atributos: CPF(identificador) e nome.
+
+	ENTREGADOR: Tabela que armazena os dados do entregador.
+	Atributos: salário e turno.
+
+	CLIENTE: Tabela que armazena os dados dos clientes.
+	Atributos: telefone.
+
+	ENDERECO: Tabela que armazena o endereço dos clientes.
+	Atributos: número, tipo logradouro, nome logradouro e bairro.
+
+	RESTAURANTE/PRODUTO(Produz): Um restaurante pode produzir um ou vários produtos, enquanto um produto pode ser produzido por um ou vários restaurantes.
+
+	PRODUTO/PEDIDO(Compoe): Um produto pode compor um ou vários pedidos, assim como um pedido pode ser composto por um ou vários produtos. Esse relacionamento possui o atributo quantidade.
+
+	PEDIDO/CLIENTE(Feito): Um cliente pode fazer um ou vários pedidos, mas um pedido só pode ser feito por apenas um único cliente.
+
+	PEDIDO/ENTREGADOR(Retira): Um entregador pode retirar um ou vários pedidos, porém um pedido só pode ser retirado por apenas um entregador. 
+
+	ENTREGADOR/CLIENTE(Entrega): Um entregador pode entregar para nenhum ou vários clientes, e um cliente pode receber de um ou vários entregadores. Esse relacionamento possui o atributo código do pedido, além da data e hora.
+
+	CLIENTE/ENDERECO(Possui): Um cliente possui apenas um endereço, e um endereço só pode estar relacionado a apenas um cliente.
+
 
 ### 6	MODELO LÓGICO<br>
         
