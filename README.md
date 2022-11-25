@@ -126,7 +126,8 @@ Um restaurante pode produzir um ou vários produtos, enquanto um produto pode se
 
 	CREATE TABLE PRODUTO_PEDIDO (
 	    fk_PRODUTO_cod_produto INTEGER,
-	    fk_PEDIDO_cod_pedido INTEGER
+	    fk_PEDIDO_cod_pedido INTEGER,
+	    qtd INTEGER
 	);
 
 	CREATE TABLE ENTREGADOR_CLIENTE (
