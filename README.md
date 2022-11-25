@@ -23,11 +23,11 @@ Elisa Andrade de Jesus:moon.anonimos.es@gmail.com<br>
 #### 4.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
     
 > A Empresa "AiQueFome!" precisa inicialmente dos seguintes relatórios:
-* Relatório que mostre o nome de cada entregador e a quantidade de entregas feitas por ele.
+* Relatório que mostre o nome de cada entregador e a quantidade de entregas feitas por ele, além de um bônus para aquele(s) que fez mais entregas.
 * Relatório que apresente o nome do restaurante, a quantidade de pedidos realizados por ele e o valor total desses pedidos.
 * Relatório que mostre a quantidade das entregas feitas após certo horário.
-* Relatório que mostre o nome de cada cliente e o valor total dos pedidos que esse cliente pediu.
-* Relatório que mostre o nome do bairro e a quantidade de clientes que residem nele, agrupando pelo bairro.
+* Relatório que mostre o nome de cada cliente e o valor total dos pedidos que esse cliente pediu, assim como a quantidade total de produtos comprados por esse cliente.
+* Relatório que mostre o nome do bairro, o tipo de logradouro e a quantidade de clientes que residem nele, agrupando pelo bairro e pelo logradouro.
 
  ### 5.MODELO CONCEITUAL<br>
 
