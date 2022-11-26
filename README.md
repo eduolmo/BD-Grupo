@@ -27,7 +27,7 @@ Elisa Andrade de Jesus:moon.anonimos.es@gmail.com<br>
 * Relatório que apresente o nome do restaurante, a quantidade de pedidos realizados por ele e o valor total desses pedidos.
 * Relatório que mostre a quantidade das entregas feitas nos turnos vespertino e noturno, assim como o valor total de todos os pedidos relacionados à essas entregas.
 * Relatório que mostre o nome de cada cliente e o valor total dos pedidos que esse cliente pediu, assim como a quantidade total de produtos comprados por esse cliente.
-* Relatório que mostre o nome do bairro, o tipo de logradouro e a quantidade de clientes que residem nele, agrupando pelo bairro e pelo logradouro.
+* Relatório que mostre o nome do bairro e a quantidade de clientes que residem nele, agrupando pelo bairro.
 
  ### 5.MODELO CONCEITUAL<br>
 
