@@ -632,30 +632,30 @@ select * from entregador_cliente where extract(hour from data_hora) < 12;<br>
     a) Criar minimo 3 de exclusão
 DELETE FROM Pessoa where nome like 'A%';
 select * from Pessoa;<br>
-![Image](https://user-images.githubusercontent.com/84751064/201204948-e87fde17-059f-4d35-8d92-45bc9f74a381.png)
+![image](https://user-images.githubusercontent.com/92343021/204107840-c81fd4e8-3ec9-4ff8-a8b1-afd82b861a18.png)
 
 DELETE FROM Entregador_cliente where data_hora='2022-09-12 12:50:00' ;
 select * from Entregador_Cliente<br>
-![Image](https://user-images.githubusercontent.com/84751064/201205878-bc353822-ee90-4dc0-9d5a-8e170eec461f.png)
+![image](https://user-images.githubusercontent.com/92343021/204107884-6b43317d-6a0f-4c43-a33d-b0287ac3b78c.png)
 
 DELETE FROM Cliente_Endereco where  tipo_logradouro='Avenida' or bairro like 'N%' ;
 select * from Cliente_Endereco<br>
-![Image](https://user-images.githubusercontent.com/84751064/201206732-8c7f5a51-1ab0-4eeb-8706-aea57dea7f53.png)
+![image](https://user-images.githubusercontent.com/92343021/204107918-4ac8c6b6-3e84-453e-b883-f9d3dba015fe.png)
 
 
 	b) Criar minimo 3 de atualização
 
 update Pessoa set nome='Fernanda Fagundes' where cpf='555.555.555-66';
 select * from Pessoa;<br>
-![Image](https://user-images.githubusercontent.com/84751064/201203050-bc3a2f9f-ddf7-4914-a1ba-53466bdddc41.png)
+![image](https://user-images.githubusercontent.com/92343021/204107950-86f56bb4-572a-4773-99d6-2dbc83a8c36a.png)
 
 update Produto set nome='Tortilhas' where cod_produto='06';
 select * from Produto;<br>
-![Image](https://user-images.githubusercontent.com/84751064/201203269-fd2efef7-899b-4528-8345-19e1214b0f55.png)
+![image](https://user-images.githubusercontent.com/92343021/204108031-19ab3637-0fa9-4c22-9113-edf1e8f189f4.png)
 
 update CLIENTE_ENDERECO set tipo_logradouro='rua' where Bairro='Barcelona';
 select * from CLIENTE_ENDERECO;<br>
-![Image](https://user-images.githubusercontent.com/84751064/201204014-3ea98852-72e3-4daa-a1c0-cac241644be5.png)
+![image](https://user-images.githubusercontent.com/92343021/204108052-f260817a-0eb1-46d0-95e6-3cdb1a87a3ab.png)
 
 #### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6)<br>
     a) Uma junção que envolva todas as tabelas possuindo no mínimo 2 registros no resultado
