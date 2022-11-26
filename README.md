@@ -652,15 +652,15 @@ select * from Cliente_Endereco<br>
 
 update Pessoa set nome='Fernanda Fagundes' where cpf='555.555.555-66';
 select * from Pessoa;<br>
-![image](https://user-images.githubusercontent.com/92343021/204107950-86f56bb4-572a-4773-99d6-2dbc83a8c36a.png)
+![image](https://user-images.githubusercontent.com/92343021/204111783-76727014-b569-4ffb-9efd-f5569b8a76f8.png)
 
 update Produto set nome='Tortilhas' where cod_produto='06';
 select * from Produto;<br>
-![image](https://user-images.githubusercontent.com/92343021/204108031-19ab3637-0fa9-4c22-9113-edf1e8f189f4.png)
+![image](https://user-images.githubusercontent.com/92343021/204111803-e36dcef5-7f5e-4a4a-b4bf-9ebf4ec12e07.png)
 
-update CLIENTE_ENDERECO set tipo_logradouro='rua' where Bairro='Barcelona';
+update CLIENTE_ENDERECO set tipo_logradouro='Rua' where Bairro='Barcelona';
 select * from CLIENTE_ENDERECO;<br>
-![image](https://user-images.githubusercontent.com/92343021/204108052-f260817a-0eb1-46d0-95e6-3cdb1a87a3ab.png)
+![image](https://user-images.githubusercontent.com/92343021/204111846-00bd3d96-9bd9-43a6-ac54-e44226aab336.png)
 
 #### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6)<br>
     a) Uma junção que envolva todas as tabelas possuindo no mínimo 2 registros no resultado
