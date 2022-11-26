@@ -487,23 +487,23 @@ Elisa Andrade de Jesus:moon.anonimos.es@gmail.com<br>
     
     
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
-![image](https://user-images.githubusercontent.com/92343021/200924692-6edc974e-bd6d-4706-a4ff-fa58f2a2d9b2.png)
+![image](https://user-images.githubusercontent.com/92343021/204091943-dd50d8f1-4873-4603-a846-674681c8cd9b.png)
 
-![image](https://user-images.githubusercontent.com/92343021/200924753-92d9af97-69f1-4a11-b224-1e11024fadc9.png)
+![image](https://user-images.githubusercontent.com/92343021/204091966-0ec0d405-6931-483d-813c-190b1045654d.png)
 
-![image](https://user-images.githubusercontent.com/91472785/200929881-f88f90ba-45e8-4c75-a48e-15643f39f98a.png)
+![image](https://user-images.githubusercontent.com/92343021/204091985-f523d459-b72d-47bf-be24-7770f2a9ac52.png)
 	
-![image](https://user-images.githubusercontent.com/92343021/200925283-44ee2b78-922e-4422-895b-99f2c88f70ce.png)
+![image](https://user-images.githubusercontent.com/92343021/204092039-9c0cf640-1fef-4136-aef1-011292cf791b.png)
 
-![image](https://user-images.githubusercontent.com/92343021/200925762-94afffcd-e35f-4267-a2db-57ed6c7c1994.png)
+![image](https://user-images.githubusercontent.com/92343021/204092053-a14dbe3f-5e13-4dfc-bd2f-d706354eaaea.png)
 
-![image](https://user-images.githubusercontent.com/92343021/200925814-cc9d207f-6549-4006-b692-47598d15897f.png)
+![image](https://user-images.githubusercontent.com/92343021/204092057-2e8b1cf4-8afb-4416-821d-d744f306a708.png)
 
-![image](https://user-images.githubusercontent.com/92343021/200925950-819b64e5-5777-450d-b38c-d83107b3a81d.png)
+![image](https://user-images.githubusercontent.com/92343021/204092068-1e1e4a7f-fb55-4b77-8fb4-8c37b6c545c7.png)
 
-![image](https://user-images.githubusercontent.com/92343021/200925989-baeec5cc-7b18-44a5-959f-cf88bfe4f601.png)
+![image](https://user-images.githubusercontent.com/92343021/204092072-80f92a06-8692-41c5-9978-af7944c0416b.png)
 
-![image](https://user-images.githubusercontent.com/92343021/200930615-8fc964f5-df45-4f87-9849-977c9371ca9e.png)
+![image](https://user-images.githubusercontent.com/92343021/204092085-f40eb62e-eea5-4326-8ad1-cadeb8bbb465.png)
 
 
 	
