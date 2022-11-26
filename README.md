@@ -589,19 +589,19 @@ select cod_pedido,FK_RESTAURANTE_cnpj as cnpj_Restaurante,FK_ENTREGADOR_FK_PESSO
     a) Criar outras 5 consultas que envolvam like ou ilike
     
 select * from produto where nome like '%a';<br>
-![image](https://user-images.githubusercontent.com/91472785/200929491-c63e0e0c-53b4-46fc-bc5d-1eff19aef403.png)
+![image](https://user-images.githubusercontent.com/92343021/204099474-3a58e6af-ac8c-4e86-9a09-66f6c3872d80.png)
 
 select * from cliente_endereco where bairro like 'B%';<br>
-![image](https://user-images.githubusercontent.com/91472785/200926258-f6f1d9cf-a5bf-4d35-9608-8e71438cf221.png)
+![image](https://user-images.githubusercontent.com/92343021/204099634-97a34cc7-6a81-4af9-bb11-b20b37d331d4.png)
 
 select * from entregador where turno like 'V%';<br>
-![image](https://user-images.githubusercontent.com/91472785/200926333-81451549-def7-4409-8025-9fd2df8589c9.png)
+![image](https://user-images.githubusercontent.com/92343021/204099657-838b3625-ba52-4917-92e0-a88e9428b869.png)
 
 select * from restaurante where nome like '%u%';<br>
-![image](https://user-images.githubusercontent.com/91472785/200926454-b423337a-f1cc-4ceb-8389-8615db1deccd.png)
+![image](https://user-images.githubusercontent.com/92343021/204099693-5e71f341-c938-4b35-af95-9838ec3ab4d9.png)
 
 select * from pessoa where nome like 'P%' or nome like 'A%';<br>
-![image](https://user-images.githubusercontent.com/91472785/200926521-58335f8f-0404-491a-971a-8fe23e79fe30.png)
+![image](https://user-images.githubusercontent.com/92343021/204099725-4ac019e7-49fb-48f9-b598-56381ff8a182.png)
     
     b) Criar uma consulta para cada tipo de função data apresentada.
 
