@@ -634,16 +634,16 @@ select * from entregador_cliente where extract(hour from data_hora) < 12;<br>
     a) Criar minimo 3 de exclusão
 DELETE FROM Entregador_cliente 
 where data_hora='2022-09-12 12:50:00';
-select * from Pessoa;<br>
-![image](https://user-images.githubusercontent.com/92343021/204107840-c81fd4e8-3ec9-4ff8-a8b1-afd82b861a18.png)
+select * from Entregador_cliente;<br>
+![image](https://user-images.githubusercontent.com/92343021/204109789-a75a631d-8c84-4a0d-b7dc-0b17b8375e5c.png)
 
-DELETE FROM Entregador_cliente where data_hora='2022-09-12 12:50:00' ;
-select * from Entregador_Cliente<br>
-![image](https://user-images.githubusercontent.com/92343021/204107884-6b43317d-6a0f-4c43-a33d-b0287ac3b78c.png)
+DELETE FROM Pessoa where nome = 'Jorge Pereira Alves' ;
+select * from Pessoa<br>
+![image](https://user-images.githubusercontent.com/92343021/204109860-aa70519f-5a65-4b7d-a337-e4388ba1ce9f.png)
 
 DELETE FROM Cliente_Endereco where  tipo_logradouro='Avenida' or bairro = 'Porto Canoa' ;
 select * from Cliente_Endereco<br>
-![image](https://user-images.githubusercontent.com/92343021/204107918-4ac8c6b6-3e84-453e-b883-f9d3dba015fe.png)
+![image](https://user-images.githubusercontent.com/92343021/204109843-4fd0a0c0-3922-4061-8503-374cfb853078.png)
 
 
 	b) Criar minimo 3 de atualização
