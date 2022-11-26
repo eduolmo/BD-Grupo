@@ -685,7 +685,7 @@ inner join pessoa as ps<br>
 on(ce.fk_pessoa_cpf = ps.cpf)<br>
 order by ce.fk_pessoa_cpf;<br>
 
-![Imagem do WhatsApp de 2022-11-10 à(s) 17 49 30](https://user-images.githubusercontent.com/91472785/201203268-1bcd9a0f-1a7e-4288-8f8f-70c084d3260d.jpg)
+![image](https://user-images.githubusercontent.com/92343021/204110405-e4ce906a-c595-4dc7-b07f-4378b8b3d989.png)
 
     b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho
 select r.nome as restaurante,p.nome as produto<br>
