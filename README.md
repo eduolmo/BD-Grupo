@@ -835,7 +835,7 @@ from pessoa<br>
 inner join cliente_endereco<br>
 on(pessoa.cpf = cliente_endereco.fk_pessoa_cpf)<br>
 
-![image](https://user-images.githubusercontent.com/92343021/201488097-9e5bf2bc-b9af-4722-bab2-a2571edd280b.png)
+![image](https://user-images.githubusercontent.com/92343021/204107384-df130128-03e6-4973-ba06-6f807c07da02.png)
 
 	b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
 
@@ -846,7 +846,7 @@ from pessoa<br>
 inner join entregador<br>
 on(pessoa.cpf = entregador.fk_pessoa_cpf);<br>
 
-![image](https://user-images.githubusercontent.com/92343021/201488477-3876ddef-08a0-4f80-bfd6-afea1b71cfec.png)
+![image](https://user-images.githubusercontent.com/92343021/204107413-3396fa36-1d22-4a39-9e03-00ab561a7406.png)
 
 create view cpf_e_nome_entregador as<br>
 select pessoa.cpf,pessoa.nome<br>
@@ -854,7 +854,7 @@ from pessoa<br>
 inner join entregador<br>
 on(pessoa.cpf = entregador.fk_pessoa_cpf);<br>
 
-![image](https://user-images.githubusercontent.com/92343021/201488574-fd2284fd-33e3-4a97-bb88-ecd3a020a809.png)
+![image](https://user-images.githubusercontent.com/92343021/204107439-9918f1b9-21e3-4f3e-9321-1b91ee1a68c0.png)
 
 create view cpf_e_nome_cliente as<br>
 select pessoa.cpf,pessoa.nome<br>
@@ -862,7 +862,7 @@ from pessoa<br>
 inner join cliente_endereco<br>
 on(pessoa.cpf = cliente_endereco.fk_pessoa_cpf)<br>
 
-![image](https://user-images.githubusercontent.com/92343021/201488622-6e2a01b0-29cf-450f-a068-1b8b7ac74763.png)
+![image](https://user-images.githubusercontent.com/92343021/204107475-786ebbb5-66b1-467e-b6dd-58b080c91752.png)
 
 create view cliente_pagamento_pedido as<br>
 select pessoa.cpf, pessoa.nome, sum(pedido.preco_total) as pagamento_total<br>
@@ -871,7 +871,7 @@ inner join pessoa<br>
 on(pedido.fk_cliente_endereco_fk_pessoa_cpf = pessoa.cpf)<br>
 group by pessoa.cpf, pessoa.nome;<br>
 
-![image](https://user-images.githubusercontent.com/92343021/201489103-a74a1d46-77df-48fe-b781-e5d1927d8c2d.png)
+![image](https://user-images.githubusercontent.com/92343021/204107564-c8ba597b-bcb8-410d-ae82-f2480287eb52.png)
 
 create view restaurante_produto_vendas as<br>
 select restaurante.cnpj as restaurante_cnpj,<br>
@@ -885,7 +885,7 @@ inner join produto_pedido<br>
 on(produto_pedido.fk_pedido_cod_pedido = pedido.cod_pedido)<br>
 group by restaurante.cnpj;<br>
 
-![image](https://user-images.githubusercontent.com/92343021/201489629-644bcbe0-f5af-44a9-8701-4c1c394cd996.png)
+![image](https://user-images.githubusercontent.com/92343021/204107604-eed664da-8429-44d5-bd2e-ad80d35904e3.png)
 
 #### 9.10	SUBCONSULTAS (Mínimo 4)<br>
 
