@@ -891,12 +891,12 @@ group by restaurante.cnpj;<br>
 
 select * from entregador
 where turno in('Matutino','Vespertino');<br>
-![image](https://user-images.githubusercontent.com/91472785/201218402-4261f0ad-96a1-4dcd-abeb-9cabff345ccc.png)
+![image](https://user-images.githubusercontent.com/92343021/204107681-e084b116-2748-4e89-a28a-4f65301bfca4.png)
 
 select * 
 from cliente_endereco
 where bairro not in('Nova Almeida','Barcelona');<br>
-![image](https://user-images.githubusercontent.com/91472785/201224118-579b2319-1cd1-4b5e-a9a8-86db94cd018d.png)
+![image](https://user-images.githubusercontent.com/92343021/204107695-68325229-747e-4a30-8724-3766cdfe1dc1.png)
 
      a) Criar minimo 1 envolvendo GROUP BY
 
@@ -907,7 +907,7 @@ on(produto.cod_produto = pp.fk_produto_cod_produto)<br>
 where nome in('Pizza','Refrigerante')<br>
 group by nome<br>
 order by count(cod_produto) desc;<br>
-![image](https://user-images.githubusercontent.com/91472785/201221449-deb39e3b-421e-4ced-a29b-013546edc28b.png)
+![image](https://user-images.githubusercontent.com/92343021/204107744-e5258cd7-c8f6-4ead-bb44-5b4d1311ff40.png)
 
      
      b) Criar minimo 1 envolvendo algum tipo de junção
@@ -918,7 +918,7 @@ on(pp.fk_produto_cod_produto = produto.cod_produto)<br>
 inner join pedido<br>
 on(pp.fk_pedido_cod_pedido = pedido.cod_pedido)<br>
 where nome in('Hambúrguer','Batata Frita');<br>
-![image](https://user-images.githubusercontent.com/91472785/201218075-9c362a8f-3e72-4562-9045-c73abcc61eaa.png)
+![image](https://user-images.githubusercontent.com/92343021/204107769-bf81b2f6-27a1-466b-9ec1-a4d19da80a51.png)
 
 
 
