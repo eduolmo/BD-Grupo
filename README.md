@@ -26,7 +26,7 @@ Elisa Andrade de Jesus:moon.anonimos.es@gmail.com<br>
 * Relatório que mostre o nome de cada entregador e a quantidade de entregas feitas por ele.
 * Relatório que apresente o nome do restaurante, a quantidade de pedidos realizados por ele e o valor total desses pedidos.
 * Relatório que mostre a quantidade das entregas feitas nos turnos vespertino e noturno, e também o valor total de todos os pedidos relacionados à essas entregas.
-* Relatório que mostre o nome de cada cliente e o valor total dos pedidos que esse cliente pediu, assim como a quantidade total de produtos comprados por esse cliente.
+* Relatório que mostre o nome de cada cliente e o valor total dos pedidos que esse cliente pediu.
 * Relatório que mostre o nome do bairro e a quantidade de clientes que residem nele, agrupando pelo bairro.
 
  ### 5.MODELO CONCEITUAL<br>
@@ -515,8 +515,7 @@ select * from Pedido where preco_total > 30;<br>
 
 
 select  FK_PESSOA_cpf ,tipo_logradouro,telefone from Cliente_Endereco where telefone <> '987657668';<br>
-![image](https://user-images.githubusercontent.com/92343021/204094066-bb19fbfe-9c34-461f-aeb9-2e220a1ae77d.png)
-
+![image](https://user-images.githubusercontent.com/92343021/204094456-c1b484b9-0b3f-49b5-ac7e-2e947edb616c.png)
 
 
 select *from Entregador where turno <> 'Matutino';<br>
@@ -531,28 +530,25 @@ select *from Produto where preco > 10.00 ;<br>
     a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
     
 select *from Produto where preco > 10.00 and preco <30.00 ;<br>
-![image](https://user-images.githubusercontent.com/84751064/201212447-74152e01-98a9-4439-bad8-021581a3a8ec.png)
+![image](https://user-images.githubusercontent.com/92343021/204094219-3ac12668-0cf0-4322-8f4c-5db65c035bdc.png)
 
 select *from Pedido where(data_hora <>'2022-07-26 18:06:39'and data_hora='2022-09-12 12:20:50') or FK_ENTREGADOR_FK_PESSOA_cpf<>'444.444.444-55';<br>
-![image](https://user-images.githubusercontent.com/84751064/201212925-28f42a2d-4ee4-4994-ab2b-328df1c78df1.png)
+![image](https://user-images.githubusercontent.com/92343021/204094333-630ba929-4066-4eed-a77f-62ed95259548.png)
 
 select *from Entregador where(turno<>'Noturno'or turno='Matutino') and salario >=1200.00;<br>
-![image](https://user-images.githubusercontent.com/84751064/201213021-0f973e27-350a-400a-b9c7-afc2eb314931.png)
-
+![image](https://user-images.githubusercontent.com/92343021/204094505-2d19f3a4-c51b-4159-9ff3-428c3f488e62.png)
 
 select *from Entregador where(turno<>'Noturno'or turno='Vespertino') and salario >=1300.00;<br>
-![image](https://user-images.githubusercontent.com/84751064/201213855-a8a4f9d8-3450-4f57-8acf-80b74262f59d.png)
-
+![image](https://user-images.githubusercontent.com/92343021/204094541-a4d5206a-43a6-46da-a915-6ee70e5e7f02.png)
 
 select *from Pedido where preco_total < 20.00 or cod_pedido<>005;<br>
-![image](https://user-images.githubusercontent.com/84751064/201213742-63eb7526-2607-4563-88f0-1a966060e91e.png)
-
+![image](https://user-images.githubusercontent.com/92343021/204094593-71b43ef9-1767-4f22-a44e-a58c80079c59.png)
 
 select *from Cliente_Endereco where (tipo_logradouro<>'rua' or bairro<>'Nova Almeida')and not nome_logradouro='Rua do Rosário';<br>
-![image](https://user-images.githubusercontent.com/84751064/201213628-9d0fa054-3020-404e-89e5-f77745f85888.png)
+![image](https://user-images.githubusercontent.com/92343021/204094654-bc36526d-863c-4f82-895c-a65c44358a44.png)
 
 select *from Pedido where not preco_total =50.00 or FK_ENTREGADOR_FK_PESSOA_cpf<>'222.222.222-33';<br>
-![image](https://user-images.githubusercontent.com/84751064/201213319-14f913a4-a786-4143-b0fd-d860519bcb34.png)
+![image](https://user-images.githubusercontent.com/92343021/204094694-7de60b04-27d7-44dd-b6d8-91a525642eb4.png)
 
 	
 	b) Criar no mínimo 3 consultas com operadores aritméticos 
