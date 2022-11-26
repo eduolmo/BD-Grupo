@@ -632,7 +632,8 @@ select * from entregador_cliente where extract(hour from data_hora) < 12;<br>
 
 #### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
     a) Criar minimo 3 de exclusão
-DELETE FROM Pessoa where nome like 'A%';
+DELETE FROM Entregador_cliente 
+where data_hora='2022-09-12 12:50:00';
 select * from Pessoa;<br>
 ![image](https://user-images.githubusercontent.com/92343021/204107840-c81fd4e8-3ec9-4ff8-a8b1-afd82b861a18.png)
 
@@ -640,7 +641,7 @@ DELETE FROM Entregador_cliente where data_hora='2022-09-12 12:50:00' ;
 select * from Entregador_Cliente<br>
 ![image](https://user-images.githubusercontent.com/92343021/204107884-6b43317d-6a0f-4c43-a33d-b0287ac3b78c.png)
 
-DELETE FROM Cliente_Endereco where  tipo_logradouro='Avenida' or bairro like 'N%' ;
+DELETE FROM Cliente_Endereco where  tipo_logradouro='Avenida' or bairro = 'Porto Canoa' ;
 select * from Cliente_Endereco<br>
 ![image](https://user-images.githubusercontent.com/92343021/204107918-4ac8c6b6-3e84-453e-b883-f9d3dba015fe.png)
 
