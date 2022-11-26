@@ -688,45 +688,45 @@ order by ce.fk_pessoa_cpf;<br>
 ![image](https://user-images.githubusercontent.com/92343021/204110405-e4ce906a-c595-4dc7-b07f-4378b8b3d989.png)
 
     b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho
-select r.nome as restaurante,p.nome as produto, p.preco
-from restaurante as r
-inner join restaurante_produto as rp
-on(rp.fk_restaurante_cnpj = r.cnpj)
-inner join produto as p
-on(rp.fk_produto_cod_produto = p.cod_produto)
+select r.nome as restaurante,p.nome as produto, p.preco<br>
+from restaurante as r<br>
+inner join restaurante_produto as rp<br>
+on(rp.fk_restaurante_cnpj = r.cnpj)<br>
+inner join produto as p<br>
+on(rp.fk_produto_cod_produto = p.cod_produto)<br>
 order by p.preco<br>
 ![image](https://user-images.githubusercontent.com/91472785/204110596-47840bf9-a760-46a6-b22e-c431920377dd.png)
 
 
-select fk_pessoa_cpf,nome 
-from entregador as e 
-inner join pessoa as p 
-on(p.cpf = e.fk_pessoa_cpf)
+select fk_pessoa_cpf,nome<br>
+from entregador as e<br>
+inner join pessoa as p<br>
+on(p.cpf = e.fk_pessoa_cpf)<br>
 order by nome<br>
 ![image](https://user-images.githubusercontent.com/91472785/204110605-d985be30-64ae-46ea-b7d8-60d129310ef9.png)
 
-select nome,cod_pedido
-from entregador as e
-inner join pessoa
-on(pessoa.cpf = e.fk_pessoa_cpf)
-inner join pedido as p
-on(e.fk_pessoa_cpf = p.fk_entregador_fk_pessoa_cpf)
+select nome,cod_pedido<br>
+from entregador as e<br>
+inner join pessoa<br>
+on(pessoa.cpf = e.fk_pessoa_cpf)<br>
+inner join pedido as p<br>
+on(e.fk_pessoa_cpf = p.fk_entregador_fk_pessoa_cpf)<br>
 order by cod_pedido desc<br>
 ![image](https://user-images.githubusercontent.com/91472785/204110616-ce4c1914-eb0f-48d4-86ef-7a8a2f2e21f9.png)
 
-select fk_pessoa_cpf,nome 
-from cliente_endereco as ce 
-inner join pessoa 
-on(pessoa.cpf = ce.fk_pessoa_cpf)
+select fk_pessoa_cpf,nome<br>
+from cliente_endereco as ce<br>
+inner join pessoa<br>
+on(pessoa.cpf = ce.fk_pessoa_cpf)<br>
 order by nome desc<br>
 ![image](https://user-images.githubusercontent.com/91472785/204110632-7b2b916a-4dec-45aa-b435-447d19ed3ba1.png)
 
-select nome,cod_pedido
-from cliente_endereco as ce
-inner join pessoa
-on(ce.fk_pessoa_cpf = pessoa.cpf)
-inner join pedido as p
-on(p.fk_cliente_endereco_fk_pessoa_cpf = ce.fk_pessoa_cpf)
+select nome,cod_pedido<br>
+from cliente_endereco as ce<br>
+inner join pessoa<br>
+on(ce.fk_pessoa_cpf = pessoa.cpf)<br>
+inner join pedido as p<br>
+on(p.fk_cliente_endereco_fk_pessoa_cpf = ce.fk_pessoa_cpf)<br>
 order by cod_pedido desc<br>
 ![image](https://user-images.githubusercontent.com/91472785/204110643-0dc58f3b-e66e-4df4-9d59-45347fddcc10.png)
 
