@@ -489,12 +489,12 @@ Elisa Andrade de Jesus:moon.anonimos.es@gmail.com<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
 ![image](https://user-images.githubusercontent.com/92343021/204108916-657c90b9-e9ea-45a5-b786-f6e15d56d823.png)
 
-![image](https://user-images.githubusercontent.com/92343021/204108926-205d2cc8-ae7e-47c9-8305-b0bd1d25e54e.png)
+![image](https://user-images.githubusercontent.com/92343021/204108926-205d2cc8-ae7e-47c9-8305-b0bd1d25e54e.png)<br>
 ![image](https://user-images.githubusercontent.com/92343021/204108976-bee3e263-9bd6-45a8-8501-c317b8ecdced.png)
 
 ![image](https://user-images.githubusercontent.com/92343021/204109029-e1ff809e-f8b1-4ed4-bfe1-c1aaa438f151.png)
 	
-![image](https://user-images.githubusercontent.com/92343021/204109045-117547bc-8aae-4675-a24e-073983706073.png)
+![image](https://user-images.githubusercontent.com/92343021/204109045-117547bc-8aae-4675-a24e-073983706073.png)<br>
 ![image](https://user-images.githubusercontent.com/92343021/204109056-8d97689b-da45-4993-8181-d20bcb75950a.png)
 
 ![image](https://user-images.githubusercontent.com/92343021/204109062-2f24e779-a40c-4e01-96e3-19b474879d55.png)
@@ -505,7 +505,7 @@ Elisa Andrade de Jesus:moon.anonimos.es@gmail.com<br>
 
 ![image](https://user-images.githubusercontent.com/92343021/204109141-a5b4c960-bf92-4a04-a319-f49ddac314d6.png)
 
-![image](https://user-images.githubusercontent.com/92343021/204109160-ce8d064f-1bc5-40fe-a024-95dc0ceb096b.png)
+![image](https://user-images.githubusercontent.com/92343021/204109160-ce8d064f-1bc5-40fe-a024-95dc0ceb096b.png)<br>
 ![image](https://user-images.githubusercontent.com/92343021/204109172-e263bd8d-279a-4d42-b57c-0dabcdc094b4.png)
 
 	
