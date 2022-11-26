@@ -25,7 +25,7 @@ Elisa Andrade de Jesus:moon.anonimos.es@gmail.com<br>
 > A Empresa "AiQueFome!" precisa inicialmente dos seguintes relatórios:
 * Relatório que mostre o nome de cada entregador e a quantidade de entregas feitas por ele.
 * Relatório que apresente o nome do restaurante e o valor total dos pedidos realizados por ele.
-* Relatório que mostre a quantidade das entregas feitas nos turnos vespertino e noturno.
+* Relatório que mostre a quantidade das entregas feitas em cada turno.
 * Relatório que mostre o nome de cada cliente e a quantidade de pedidos feitos por ele.
 * Relatório que mostre o nome do bairro e a quantidade de clientes que residem nele, agrupando pelo bairro.
 
