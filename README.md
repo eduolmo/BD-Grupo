@@ -606,48 +606,30 @@ select * from pessoa where nome like 'P%' or nome like 'A%';<br>
     b) Criar uma consulta para cada tipo de função data apresentada.
 
 select *, current_date - data_hora as tempo from pedido;<br>
-![image](https://user-images.githubusercontent.com/91472785/200935520-e6d593d7-8fc0-459b-b9b2-548a6d13270a.png)
+![image](https://user-images.githubusercontent.com/92343021/204100028-54e128e0-83ab-4216-9f86-4a0d4a7c9588.png)
 
 select *, now() - data_hora as tempo from entregador_cliente;<br>
-![image](https://user-images.githubusercontent.com/91472785/200935207-eb8d4aa5-440b-4377-9748-17e8aef8c343.png)
+![image](https://user-images.githubusercontent.com/92343021/204100059-c22a3dc1-8d7b-4b0e-9086-1fc2365f10e5.png)
 
 select *, age(current_date,data_hora) as tempo from pedido;<br>
-![image](https://user-images.githubusercontent.com/91472785/200935054-33f136ac-39b2-41ad-9c17-5c93f8a29f3e.png)
+![image](https://user-images.githubusercontent.com/92343021/204100074-ce8e4bd6-2585-4452-8090-cd9c52c604ba.png)
 
 select *, date_part('month',age(current_date,data_hora)) as "tempo em meses" from entregador_cliente;<br>
-![image](https://user-images.githubusercontent.com/91472785/201132561-03c09750-fc66-4650-9a65-4067d2992d3c.png)
+![image](https://user-images.githubusercontent.com/92343021/204100097-b36ad806-9c10-442c-972e-17e70df8df28.png)
 
 select * from entregador_cliente where (extract(day from current_date-data_hora) < 20);<br>
-![image](https://user-images.githubusercontent.com/91472785/201136153-e70381c7-4894-47f6-9b7c-75c9626db516.png)
+![image](https://user-images.githubusercontent.com/92343021/204100118-fe330cd3-87e7-4704-ac31-3ca7104d14eb.png)
 
 select * from pedido where extract(hour from data_hora) < 12;<br>
-![image](https://user-images.githubusercontent.com/91472785/201138431-919ce2d0-1c7a-491b-8dbe-5cedb812dc20.png)
+![image](https://user-images.githubusercontent.com/92343021/204100152-7cb11ed3-5d1a-48c6-8290-c03581b52ba1.png)
 
 select * from entregador_cliente where extract(hour from data_hora) < 12;<br>
-![image](https://user-images.githubusercontent.com/91472785/201138558-ef723b29-96d0-4803-8306-783daebc4eb5.png)
+![image](https://user-images.githubusercontent.com/92343021/204100161-7734be3c-369f-4ee5-9669-4b31dc275e6d.png)
 
 
 
 #### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
     a) Criar minimo 3 de exclusão
-
- update Pessoa set nome='Fernanda Fagundes' where cpf='555.555.555-66';
-select * from Pessoa;<br>
-![Image](https://user-images.githubusercontent.com/84751064/201203050-bc3a2f9f-ddf7-4914-a1ba-53466bdddc41.png)
-
-
-
-update Produto set nome='Tortilhas' where cod_produto='06';
-select * from Produto;<br>
-![Image](https://user-images.githubusercontent.com/84751064/201203269-fd2efef7-899b-4528-8345-19e1214b0f55.png)
-
-
-update CLIENTE_ENDERECO set tipo_logradouro='rua' where Bairro='Barcelona';
-select * from CLIENTE_ENDERECO;<br>
-![Image](https://user-images.githubusercontent.com/84751064/201204014-3ea98852-72e3-4daa-a1c0-cac241644be5.png)
-
-	b) Criar minimo 3 de atualização
-
 DELETE FROM Pessoa where nome like 'A%';
 select * from Pessoa;<br>
 ![Image](https://user-images.githubusercontent.com/84751064/201204948-e87fde17-059f-4d35-8d92-45bc9f74a381.png)
@@ -659,6 +641,21 @@ select * from Entregador_Cliente<br>
 DELETE FROM Cliente_Endereco where  tipo_logradouro='Avenida' or bairro like 'N%' ;
 select * from Cliente_Endereco<br>
 ![Image](https://user-images.githubusercontent.com/84751064/201206732-8c7f5a51-1ab0-4eeb-8706-aea57dea7f53.png)
+
+
+	b) Criar minimo 3 de atualização
+
+update Pessoa set nome='Fernanda Fagundes' where cpf='555.555.555-66';
+select * from Pessoa;<br>
+![Image](https://user-images.githubusercontent.com/84751064/201203050-bc3a2f9f-ddf7-4914-a1ba-53466bdddc41.png)
+
+update Produto set nome='Tortilhas' where cod_produto='06';
+select * from Produto;<br>
+![Image](https://user-images.githubusercontent.com/84751064/201203269-fd2efef7-899b-4528-8345-19e1214b0f55.png)
+
+update CLIENTE_ENDERECO set tipo_logradouro='rua' where Bairro='Barcelona';
+select * from CLIENTE_ENDERECO;<br>
+![Image](https://user-images.githubusercontent.com/84751064/201204014-3ea98852-72e3-4daa-a1c0-cac241644be5.png)
 
 #### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6)<br>
     a) Uma junção que envolva todas as tabelas possuindo no mínimo 2 registros no resultado
