@@ -473,10 +473,10 @@ Elisa Andrade de Jesus:moon.anonimos.es@gmail.com<br>
 		 ('393.939.393-93','141.414.141-41',015,'2022-04-04 16:04:40'),
 		 ('282.828.282-82','333.333.333-33',016,'2022-05-06 07:30:30'),
 		 ('393.939.393-93','373.737.373-73',017,'2022-09-08 09:19:29'),
-		 ('393.939.393-93','353.535.353-53',018,'2022-09-08 19:40:45'),
-		 ('474.747.474-74','373.737.373-73',019,'2022-11-12 13:11:13'),
-		 ('363.636.363-63','242.424.242-42',020,'2022-02-22 23:30:00'),
-		 ('383.838.383-83','333.333.333-33',021,'2022-07-03 08:20:45');
+		 (null,'353.535.353-53',018,'2022-09-08 19:40:45'),
+		 (null,'373.737.373-73',019,'2022-11-12 13:11:13'),
+		 (null,'242.424.242-42',020,'2022-02-22 23:30:00'),
+		 (null,'333.333.333-33',021,'2022-07-03 08:20:45');
 	
 	
 	
@@ -632,21 +632,19 @@ select * from entregador_cliente where extract(hour from data_hora) < 12;<br>
 
 #### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
     a) Criar minimo 3 de exclusão
-    
-DELETE FROM Pessoa where nome = 'Jorge Pereira Alves' ;
-select * from Pessoa<br>
-![image](https://user-images.githubusercontent.com/92343021/204111005-b391e1d8-e1d9-40bc-ac30-66b8b2c4d8e9.png)
-
 DELETE FROM Entregador_cliente 
 where data_hora='2022-09-12 12:50:00';
 select * from Entregador_cliente;<br>
-![image](https://user-images.githubusercontent.com/92343021/204111257-15e5ab77-7130-47c7-95ae-e5b5e7828ada.png)
+![image](https://user-images.githubusercontent.com/92343021/204109789-a75a631d-8c84-4a0d-b7dc-0b17b8375e5c.png)
 
-DELETE FROM Cliente_Endereco 
-where tipo_logradouro='Avenida' 
-or bairro = 'Porto Canoa';
+DELETE FROM Pessoa where nome = 'Jorge Pereira Alves' ;
+select * from Pessoa<br>
+![image](https://user-images.githubusercontent.com/92343021/204109860-aa70519f-5a65-4b7d-a337-e4388ba1ce9f.png)
+
+DELETE FROM Cliente_Endereco where  tipo_logradouro='Avenida' or bairro = 'Porto Canoa' ;
 select * from Cliente_Endereco<br>
-![image](https://user-images.githubusercontent.com/92343021/204111280-26d50dd2-d05e-4180-b3fc-d757e87ae93c.png)
+![image](https://user-images.githubusercontent.com/92343021/204109843-4fd0a0c0-3922-4061-8503-374cfb853078.png)
+
 
 	b) Criar minimo 3 de atualização
 
@@ -809,12 +807,11 @@ on(cliente_endereco.fk_pessoa_cpf = pessoa.cpf);<br>
 
 ![image](https://user-images.githubusercontent.com/92343021/204105248-e807e340-2e9d-482a-8210-f58011f33595.png)
 
-select * <br> 
-from entregador<br> 
-full outer join entregador_cliente<br> 
-on(entregador.fk_pessoa_cpf = entregador_cliente.fk_entregador_fk_pessoa_cpf);<br> 
+select * from entregador as e<br>
+full outer join entregador_cliente as ec<br>
+on(e.fk_pessoa_cpf = ec.fk_entregador_fk_pessoa_cpf);<br> 
 
-![image](https://user-images.githubusercontent.com/92343021/201439000-a538a7f1-468f-4358-9238-499562796d17.png)
+![image](https://user-images.githubusercontent.com/91472785/204111296-81c46f62-ef84-4fc7-8fb7-d84855ccc0de.png)
 
 select pessoa.cpf,<br> 
 pessoa.nome,<br> 
