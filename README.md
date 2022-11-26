@@ -797,7 +797,7 @@ from pessoa<br>
 left outer join cliente_endereco<br> 
 on(cliente_endereco.fk_pessoa_cpf = pessoa.cpf);<br> 
 
-![image](https://user-images.githubusercontent.com/92343021/201435741-7daa119c-9e31-4765-a10d-5a3de4306f64.png)
+![image](https://user-images.githubusercontent.com/92343021/204105248-e807e340-2e9d-482a-8210-f58011f33595.png)
 
 select * <br> 
 from entregador<br> 
