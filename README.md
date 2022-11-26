@@ -733,14 +733,14 @@ on (pessoa.cpf = entregador.fk_pessoa_cpf)<br>
 inner join pedido<br>
 on (entregador.fk_pessoa_cpf = pedido.fk_entregador_fk_pessoa_cpf)<br>
 group by pessoa.nome;<br>
-![image](https://user-images.githubusercontent.com/92343021/200932809-0d143044-8e29-4ab3-8286-66e9bc5a05ca.png)
+![image](https://user-images.githubusercontent.com/92343021/204104755-3e17c59e-b988-4c7f-a327-6c841cd03855.png)
 
 select restaurante.nome, count(pedido.cod_pedido) as qtd_pedidos, sum(pedido.preco_total) as valor_total<br>
 from restaurante<br>
 inner join pedido<br>
 on (restaurante.cnpj = pedido.fk_restaurante_cnpj)<br>
 group by restaurante.nome;<br>
-![image](https://user-images.githubusercontent.com/92343021/200934612-4c5f5392-41a8-4976-ace0-e7ee2fb150cc.png)
+![image](https://user-images.githubusercontent.com/92343021/204104806-c7ec82d9-5d69-4bef-bef2-507c0857ff00.png)
 
 select pessoa.nome, sum(pedido.preco_total) as valor_total<br>
 from pessoa<br>
@@ -749,20 +749,20 @@ on (pessoa.cpf = cliente_endereco.fk_pessoa_cpf)<br>
 inner join pedido<br>
 on (cliente_endereco.fk_pessoa_cpf = pedido.fk_cliente_endereco_fk_pessoa_cpf)<br>
 group by pessoa.nome;<br>
-![image](https://user-images.githubusercontent.com/92343021/200936150-4f848acb-3bfe-4d56-9764-06f8fca3bc79.png)
+![image](https://user-images.githubusercontent.com/92343021/204104853-236117dd-7b1e-4c8f-91e9-2d5f6201c016.png)
 
 select cliente_endereco.bairro,<br>
 count(cliente_endereco.fk_pessoa_cpf) as qtd_clientes<br>
 from cliente_endereco<br>
 group by bairro;<br>
-![image](https://user-images.githubusercontent.com/92343021/201430392-235e0aba-c3d8-42e8-a6fd-f8b2b260fcc6.png)
+![image](https://user-images.githubusercontent.com/92343021/204104877-bcb8a501-9bd1-4fb2-9f36-cf6b5003c7c6.png)
 
 select entregador.turno,<br>
 count(entregador.fk_pessoa_cpf) as qtd_entregadores,<br> 
 sum(entregador.salario) as soma_salario<br>
 from entregador<br>
 group by turno;<br>
-![image](https://user-images.githubusercontent.com/92343021/201431035-876589a2-980d-42f4-a785-f2285a6f15d1.png)
+![image](https://user-images.githubusercontent.com/92343021/204104920-ebf3f60d-4ae7-4213-99fd-1288973c7525.png)
 
 select produto_pedido.fk_pedido_cod_pedido,<br> 
 count(produto.cod_produto) as qtd_produtos<br>
@@ -772,7 +772,7 @@ on (produto.cod_produto = produto_pedido.fk_produto_cod_produto)<br>
 group by produto_pedido.fk_pedido_cod_pedido<br>
 order by produto_pedido.fk_pedido_cod_pedido;<br>
 
-![image](https://user-images.githubusercontent.com/92343021/201432265-03a93b4d-851f-44bb-90bf-903de2cf23b3.png)
+![image](https://user-images.githubusercontent.com/92343021/204104962-77263aa5-61dd-4aea-9b48-6e219e29b241.png)
 
 #### 9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4)<br>
     a) Criar minimo 1 de cada tipo
@@ -784,7 +784,7 @@ from entregador<br>
 right outer join pessoa<br>
 on(pessoa.cpf = entregador.fk_pessoa_cpf);<br>	
 
-![image](https://user-images.githubusercontent.com/92343021/201438227-d7a56bc4-206c-4a6d-a896-a425712469cd.png)
+![image](https://user-images.githubusercontent.com/92343021/204105035-87da4d0a-b8eb-4817-9eb3-0ffc9f442cbf.png)
 
 select pessoa.cpf,<br>
 pessoa.nome,<br> 
