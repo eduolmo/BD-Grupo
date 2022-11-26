@@ -691,14 +691,14 @@ inner join restaurante_produto as rp<br>
 on(rp.fk_restaurante_cnpj = r.cnpj)<br>
 inner join produto as p<br>
 on(rp.fk_produto_cod_produto = p.cod_produto)<br>
-![image](https://user-images.githubusercontent.com/91472785/201206014-37e3bc5b-9180-4882-b78a-5332d42a6b1a.png)
+![image](https://user-images.githubusercontent.com/92343021/204104537-bab22438-8327-451f-9531-7dbac39c93e6.png)
 
 
 select fk_pessoa_cpf,nome
 from entregador
 inner join pessoa
 on(pessoa.cpf = entregador.fk_pessoa_cpf)
-![image](https://user-images.githubusercontent.com/91472785/201205037-bbe5488a-5007-4585-9e97-c26d37ade3e7.png)
+![image](https://user-images.githubusercontent.com/92343021/204104559-1bab15b0-5942-4bf7-9bab-334ab015dbe2.png)
 
 select nome,cod_pedido<br>
 from entregador<br>
@@ -706,13 +706,13 @@ inner join pessoa<br>
 on(pessoa.cpf = entregador.fk_pessoa_cpf)<br>
 inner join pedido<br>
 on(entregador.fk_pessoa_cpf = pedido.fk_entregador_fk_pessoa_cpf)<br>
-![image](https://user-images.githubusercontent.com/91472785/201208623-9650b7be-3eb5-4311-b4e0-77c17b6dd112.png)
+![image](https://user-images.githubusercontent.com/92343021/204104598-8518b614-db55-4b1d-81c8-2f6e74c4372d.png)
 
 select fk_pessoa_cpf,nome
 from cliente_endereco as ce
 inner join pessoa
 on(pessoa.cpf = ce.fk_pessoa_cpf)
-![image](https://user-images.githubusercontent.com/91472785/201207387-f3799631-59d7-411e-8bec-f30acd921490.png)
+![image](https://user-images.githubusercontent.com/92343021/204104630-ecb8ed95-c520-485f-87c9-ebbb206bba02.png)
 
 select nome,cod_pedido<br>
 from cliente_endereco as ce<br>
@@ -720,7 +720,7 @@ inner join pessoa<br>
 on(ce.fk_pessoa_cpf = pessoa.cpf)<br>
 inner join pedido<br>
 on(pedido.fk_cliente_endereco_fk_pessoa_cpf = ce.fk_pessoa_cpf)<br>
-![image](https://user-images.githubusercontent.com/91472785/201209371-2d13a2e2-2a4c-4f27-a87b-3db5076a54e5.png)
+![image](https://user-images.githubusercontent.com/92343021/204104653-e3417a1b-a3fa-400b-9dc0-61c89e60d064.png)
 
 
 
