@@ -25,7 +25,7 @@ Elisa Andrade de Jesus:moon.anonimos.es@gmail.com<br>
 > A Empresa "AiQueFome!" precisa inicialmente dos seguintes relatórios:
 * Relatório que mostre o nome de cada entregador e a quantidade de entregas feitas por ele.
 * Relatório que apresente o nome do restaurante, a quantidade de pedidos realizados por ele e o valor total desses pedidos.
-* Relatório que mostre a quantidade das entregas feitas em cada turno.
+* Relatório que mostre a quantidade das entregas feitas nos turnos vespertino e noturno, e também o valor total de todos os pedidos relacionados à essas entregas.
 * Relatório que mostre o nome de cada cliente e o valor total dos pedidos que esse cliente pediu.
 * Relatório que mostre o nome do bairro e a quantidade de clientes que residem nele, agrupando pelo bairro.
 
@@ -554,16 +554,16 @@ select *from Pedido where not preco_total =50.00 or FK_ENTREGADOR_FK_PESSOA_cpf<
 	b) Criar no mínimo 3 consultas com operadores aritméticos 
     
 PRIMEIRO:
-select * from ENTREGADOR_CLIENTE where FK_PEDIDO_cod_pedido > 2*2;
-![image](https://user-images.githubusercontent.com/103542882/201452008-f57b2d8e-d764-43e8-96e6-8f0a435ef2bc.png)
+select fk_pessoa_cpf,salario, salario * 12 as salario_anual from entregador;
+![image](https://user-images.githubusercontent.com/92343021/204095924-3e3f3518-2ac3-4b90-989d-416da43cb998.png)
 
 SEGUNDO:
-select * from PEDIDO where preco_total*50/100 > 2^4;<br>
-![image](https://user-images.githubusercontent.com/103542882/201452074-064467b3-5dc5-43eb-a303-f5c066b62059.png)
+select fk_pessoa_cpf, salario, salario + salario * 0.1 as salario_com_bonus from entregador;<br>
+![image](https://user-images.githubusercontent.com/92343021/204095996-9b9f794f-93b0-446b-80db-050286a333fc.png)
 
 TERCEIRO:
-select * from PRODUTO_PEDIDO where fk_PRODUTO_cod_produto > 3 and fk_PEDIDO_cod_pedido < 6;
-![image](https://user-images.githubusercontent.com/103542882/201452309-07f18d16-8890-4411-8d9a-eec2b47f794f.png)
+select *, preco + preco * 0.2 as preco_inflacao from produto;
+![image](https://user-images.githubusercontent.com/92343021/204096067-f58f13c5-8f5b-49d2-965e-4a27d41a47b6.png)
 
 
 	c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
