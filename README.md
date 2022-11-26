@@ -487,24 +487,26 @@ Elisa Andrade de Jesus:moon.anonimos.es@gmail.com<br>
     
     
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
-![image](https://user-images.githubusercontent.com/92343021/204091943-dd50d8f1-4873-4603-a846-674681c8cd9b.png)
+![image](https://user-images.githubusercontent.com/92343021/204108916-657c90b9-e9ea-45a5-b786-f6e15d56d823.png)
 
-![image](https://user-images.githubusercontent.com/92343021/204091966-0ec0d405-6931-483d-813c-190b1045654d.png)
+![image](https://user-images.githubusercontent.com/92343021/204108926-205d2cc8-ae7e-47c9-8305-b0bd1d25e54e.png)
+![image](https://user-images.githubusercontent.com/92343021/204108976-bee3e263-9bd6-45a8-8501-c317b8ecdced.png)
 
-![image](https://user-images.githubusercontent.com/92343021/204091985-f523d459-b72d-47bf-be24-7770f2a9ac52.png)
+![image](https://user-images.githubusercontent.com/92343021/204109029-e1ff809e-f8b1-4ed4-bfe1-c1aaa438f151.png)
 	
-![image](https://user-images.githubusercontent.com/92343021/204092039-9c0cf640-1fef-4136-aef1-011292cf791b.png)
+![image](https://user-images.githubusercontent.com/92343021/204109045-117547bc-8aae-4675-a24e-073983706073.png)
+![image](https://user-images.githubusercontent.com/92343021/204109056-8d97689b-da45-4993-8181-d20bcb75950a.png)
 
-![image](https://user-images.githubusercontent.com/92343021/204092053-a14dbe3f-5e13-4dfc-bd2f-d706354eaaea.png)
+![image](https://user-images.githubusercontent.com/92343021/204109062-2f24e779-a40c-4e01-96e3-19b474879d55.png)
 
-![image](https://user-images.githubusercontent.com/92343021/204092057-2e8b1cf4-8afb-4416-821d-d744f306a708.png)
+![image](https://user-images.githubusercontent.com/92343021/204109068-efb3712a-d92c-474a-9e3b-4bb3711a5b9c.png)
 
-![image](https://user-images.githubusercontent.com/92343021/204092068-1e1e4a7f-fb55-4b77-8fb4-8c37b6c545c7.png)
+![image](https://user-images.githubusercontent.com/92343021/204109085-97f07c5b-ddd2-4f8b-bc12-468c38cfd235.png)
 
-![image](https://user-images.githubusercontent.com/92343021/204092072-80f92a06-8692-41c5-9978-af7944c0416b.png)
+![image](https://user-images.githubusercontent.com/92343021/204109141-a5b4c960-bf92-4a04-a319-f49ddac314d6.png)
 
-![image](https://user-images.githubusercontent.com/92343021/204092085-f40eb62e-eea5-4326-8ad1-cadeb8bbb465.png)
-
+![image](https://user-images.githubusercontent.com/92343021/204109160-ce8d064f-1bc5-40fe-a024-95dc0ceb096b.png)
+![image](https://user-images.githubusercontent.com/92343021/204109172-e263bd8d-279a-4d42-b57c-0dabcdc094b4.png)
 
 	
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
