@@ -821,7 +821,7 @@ on(pessoa.cpf = entregador.fk_pessoa_cpf)<br>
 left outer join cliente_endereco<br> 
 on(cliente_endereco.fk_pessoa_cpf = pessoa.cpf);<br> 
 
-![image](https://user-images.githubusercontent.com/92343021/201438723-45419f1a-cfc6-47dd-8006-b989d8b43bd3.png)
+![image](https://user-images.githubusercontent.com/92343021/204107267-4d10bcdd-0af8-4d05-ad64-899af9d28718.png)
 
 
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
